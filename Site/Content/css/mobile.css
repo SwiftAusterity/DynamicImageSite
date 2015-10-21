@@ -1,0 +1,215 @@
+﻿/* Base
+---------------------------------------------------------------------- */
+a.button, input.button, button {
+    display: block;
+}
+
+/* Forms
+---------------------------------------------------------------------- */
+form label {
+    font-size: 14px;
+}
+input.text, textarea {
+    font-size: 14px;
+    margin: 2px 0;
+    padding: 4px 6px;
+}
+
+/* Page Style
+---------------------------------------------------------------------- */
+body {
+    background-color: #111;
+}
+#page {
+    min-width: 320px;
+    min-height: 480px;
+    height: auto;
+}
+#footer {
+    position: relative;
+    height: auto;
+}
+#footer-inner {
+    height: auto;
+    line-height: 1.5em;
+    text-align: center;
+}
+#footer p {
+    float: none;
+    width: auto;
+}
+#stage {
+    position: relative;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+/* Navigation
+---------------------------------------------------------------------- */
+/* Primary */
+#primary-nav {
+    width: auto;
+    left: 10px;
+}
+#primary-nav .logo {
+    width: 70px;
+    height: 29px;
+}
+#primary-nav .logo a {
+    background-image: url(../images/infuz-logo-black-sm.png);
+}
+#primary-nav ul {
+    margin: 0;
+    padding: 4px 2px 2px 8px;
+}
+#primary-nav li {
+    font-size: 13px;
+    line-height: 13px;
+}
+#primary-nav li a {
+    padding: 8px 12px 6px;
+}
+
+/* Content Panes
+---------------------------------------------------------------------- */
+#stage .pane {
+    position: relative;
+    padding: 70px 0 20px;
+}
+.pane {
+    height: auto;
+}
+.pane-inner {
+    height: auto;
+}
+.pane .main {
+    position: relative;
+    top: auto;
+    bottom: auto;
+}
+.pane .main .block.left,
+.pane .main .block.right {
+    width: auto;
+    min-width: 210px;
+    max-width: 50%;
+    padding-left: 35px;
+}
+.pane .main .block .intro {
+    padding: 0;
+}
+.pane .main .left {
+    clear: both;
+}
+.pane .main section {
+    width: auto;
+    height: auto;
+}
+.pane .main section .video-container {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    min-height: 0;
+    background: #000;
+}
+.pane .main section .video-bigbutton {
+    opacity: 1;
+    filter: none;
+
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.pane.root .main header h2 {
+    line-height: 1.2em;
+}
+
+#stage .pane.work {
+    background-image: none !important;
+    padding-top: 0;
+}
+.pane .content-group {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 250px;
+    padding-top: 15px;
+}
+#group-work {
+    background-image: url("../images/Work/index_m.jpg");
+    padding-top: 50px; /* first item */
+}
+#group-work-charter {
+    background-image: url("../images/Work/Charter/index_m.jpg");
+}
+#group-work-loufest {
+    background-image: url("../images/Work/LouFest/index_m.jpg");
+}
+#group-work-tidycats {
+    background-image: url("../images/Work/Tidy-Cats/index_m.jpg");
+}
+#group-work-nccs {
+    background-image: url("../images/Work/NCCS/index_m.jpg");
+}
+#group-work-unitedway {
+    background-image: url("../images/Work/United-Way/index_m.jpg");
+}
+
+.pane.contact .main .block.right {
+    max-width: 500px;
+    min-width: 255px;
+}
+.pane.contact .contact-form fieldset {
+    padding-right: 16px;
+}
+.pane.contact .contact-form .welcome {
+    font-size: 14px;
+    padding-bottom: .8em;
+}
+.pane.contact .contact-form .welcome {
+}
+.pane.contact .contact-form #fullname-group,
+.pane.contact .contact-form #email-group {
+    float: none;
+    width: auto;
+}
+.pane.contact .contact-form #enewsletter-group label {
+    width: 80%;
+    font-size: 11px;
+    line-height: 1.1em;
+}
+.pane.contact .contact-form .button {
+    float: right;
+}
+
+/* Media Queries
+---------------------------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+    .pane .main .block {
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .pane .main .block {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .pane .main .block {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .pane .main .block {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .pane .main .block {
+        font-size: 17px;
+    }
+}

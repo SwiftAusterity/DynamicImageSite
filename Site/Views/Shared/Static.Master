@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="SquishIt.Framework" %>
+<%@ Import Namespace="Site.Models" %>
+<%@ Import Namespace="Site.ViewModels" %>
+<%
+    var currentModel = Model as BaseViewModel;
+%>
+<!doctype html>
+<!--[if IEMobile 7]><html itemscope itemtype="http://schema.org/" class="no-js iem7 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if lt IE 7]><html itemscope itemtype="http://schema.org/" class="no-js ie6 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html itemscope itemtype="http://schema.org/" class="no-js ie7 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html itemscope itemtype="http://schema.org/" class="no-js ie8 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if gt IE 8]><!--><html itemscope itemtype="http://schema.org/" class="no-js" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html itemscope itemtype="http://schema.org/" class="no-js" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><!--<![endif]-->
+<head runat="server">
+    <%
+        // Redefine the current model object since this is in "runat=server"
+        var currentModel = Html.ViewData.Model as BaseViewModel;
+    %>
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+    <meta name="description" content="Infuz">
+    <meta itemprop="name" content="Infuz">
+    <meta itemprop="description" content="Infuz">
+    <meta property="og:title" content="Infuz">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.infuz.com/">
+    <meta property="og:image" content="http://www.infuz.com/Content/images/fb-og-logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Infuz">
+    <meta property="fb:app_id" content="224336427647940">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="//fast.fonts.com/cssapi/fc5373d8-c08f-4e90-9529-898863df2e34.css" rel="stylesheet">
+    <%= Bundle.Css()
+                .Add("/Content/css/main.css")
+                .WithAttribute("media", "screen")
+                .Render("/Content/cache/css/StaticScreenMaster_#.css")%>
+    <%= Bundle.JavaScript()
+                .Add("/Content/scripts/libs/modernizr-2.0.6.min.js")
+                .Add("/Content/scripts/libs/mdetect.min.js")
+                .Add("/Content/scripts/libs/jquery-1.7.1.min.js")
+                .Render("/Content/cache/scripts/StaticMasterHead_#.js")%>
+
+    <%
+        if (currentModel != null)
+        {
+    %>
+    <%-- Google Analytics and Site Verification --%>
+    <%-- Place at the end of the <HEAD> tag content --%>
+    <script type="text/javascript" language="javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '<%= currentModel.GoogleAnalyticsCode %>']);
+        _gaq.push(['_setDomainName', 'infuz.com']);
+        //_gaq.push(['_trackPageview']); /* don't track here, we do it in the ajax */
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <%
+        }
+    %>
+</head>
+
+<body>
+    <div id="page">
+        <header id="header">
+            <% Html.RenderPartial("PrimaryNav_Static"); %>
+        </header>
+        <div id="stage">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+            
+        <footer id="footer">
+            <div id="footer-inner">
+                <span class="icon icon-sm icon-cornerfade-tl"></span>
+                <span class="icon icon-sm icon-cornerfade-br"></span>
+                <p>Digital | Social | Content | Mobile | Search | © 2012 Infuz Inc.</p>
+                <div class="tray">
+                    <a href="/Contact/" id="link-enewsletter" rel="nofollow">
+                        <span class="icon icon-sm icon-newsletter"></span>
+                        <span class="alt-content">e-Newsletter</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <%= Bundle.JavaScript()
+            .Add("/Content/scripts/plugins/jquery.easing.1.3.js")
+            .Add("/Content/scripts/plugins/jquery.cycle.all.min.js")
+            .Render("/Content/cache/scripts/StaticMasterFoot_#.js")%>
+<script type="text/javascript" language="javascript">llactid=24506</script> 
+<script type="text/javascript" language="javascript" src="http://t1.trackalyzer.com/trackalyze.js"></script> 
+<script type="text/javascript">llfrmid = 24506</script> 
+<script type="text/javascript" src="http://formalyzer.com/formalyze_init.js"></script> 
+<script type="text/javascript" src="http://formalyzer.com/formalyze_call.js"></script> 
+</body>
+</html>

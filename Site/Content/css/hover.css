@@ -1,0 +1,80 @@
+﻿/* Hover-state CSS
+---------------------------------------------------------------------- */
+/* So as not to include these on touch devices, you gotta keep 'em separated. */
+a:hover {
+    color: #ed3024;
+}
+a.alt:hover {
+    color: #fe9705;
+}
+a.button:hover,
+input.button:hover,
+button:hover {
+    background: #000;
+}
+#footer-inner a#services:hover{
+    color:#ffffff;
+}
+#mobile-choice-overlay #acceptMobile:hover {
+    background: transparent url("/content/images/mobile_btn_over.jpg") no-repeat;
+}
+#mobile-choice-overlay #denyMobile:hover {
+    background: transparent url("/content/images/full_site_btn_up.jpg") no-repeat;
+}
+#primary-nav li a:hover {
+    color: #ed3024;
+    background: #000;
+}
+#section-nav ul.filters.open li a:hover {
+    background: #333;
+    background: rgba(255, 255, 255, 0.4);
+}
+#section-nav ul.children li a:hover b {
+  background-color: transparent;
+  background-color: rgba(255, 0, 0, 0.5);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFF0000,endColorstr=#7FFF0000);
+            zoom: 1;
+}
+#paging-nav a:hover {
+    background: #ed3024;
+}
+#paging-nav .infoBox a:hover {
+    background: inherit;
+}
+#paging-nav a.info-button:hover {
+    background: #ed3024;
+}
+.contact_stalk-us .btn-social a:hover {
+  -webkit-transition: none;  
+     -moz-transition: none;  
+      -ms-transition: none;  
+       -o-transition: none;  
+          transition: none;
+          color:inherit;
+}
+.icon-lg.icon-facebook:hover {
+    background-position: -146px 0;
+}
+.icon-lg.icon-twitter:hover {
+    background-position: -145px -282px;
+}
+.icon-lg.icon-google:hover {
+    background-position: -146px -145px;
+}
+.icon-lg.icon-linkedin:hover {
+    background-position: -145px -420px;
+}
+.icon-sm.icon-newsletter:hover {
+    background-position: 0 -96px;
+}
+.icon-sm.icon-help:hover {
+    background-position: 0 -285px;
+}
+.pane .main section .video-bigbutton:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.pane.clients li:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

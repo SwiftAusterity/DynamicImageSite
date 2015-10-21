@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web.csproj", "{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj", "{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.API", "..\Data.API\Data.API.csproj", "{54D09919-332A-4CA7-AD58-FC44F89305DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		dev|Any CPU = dev|Any CPU
+		dev-release|Any CPU = dev-release|Any CPU
+		local|Any CPU = local|Any CPU
+		qa|Any CPU = qa|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.dev|Any CPU.ActiveCfg = dev|Any CPU
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.dev|Any CPU.Build.0 = dev|Any CPU
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.dev-release|Any CPU.ActiveCfg = dev-release|Any CPU
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.dev-release|Any CPU.Build.0 = dev-release|Any CPU
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.local|Any CPU.ActiveCfg = local|Any CPU
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.local|Any CPU.Build.0 = local|Any CPU
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.qa|Any CPU.ActiveCfg = qa|Any CPU
+		{5EB9789B-5B17-4C8D-9E4F-B75831F67EAF}.qa|Any CPU.Build.0 = qa|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.dev|Any CPU.ActiveCfg = dev|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.dev|Any CPU.Build.0 = dev|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.dev-release|Any CPU.ActiveCfg = dev-release|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.dev-release|Any CPU.Build.0 = dev-release|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.local|Any CPU.ActiveCfg = local|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.local|Any CPU.Build.0 = local|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.qa|Any CPU.ActiveCfg = qa|Any CPU
+		{63AFC1B7-79C0-42CD-AA92-9D07EDAD67AF}.qa|Any CPU.Build.0 = qa|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.dev|Any CPU.ActiveCfg = dev|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.dev|Any CPU.Build.0 = dev|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.dev-release|Any CPU.ActiveCfg = dev-release|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.dev-release|Any CPU.Build.0 = dev-release|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.local|Any CPU.ActiveCfg = local|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.local|Any CPU.Build.0 = local|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.qa|Any CPU.ActiveCfg = qa|Any CPU
+		{54D09919-332A-4CA7-AD58-FC44F89305DD}.qa|Any CPU.Build.0 = qa|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

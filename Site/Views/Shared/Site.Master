@@ -1,0 +1,229 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="SquishIt.Framework" %>
+<%@ Import Namespace="Site.Models" %>
+<%@ Import Namespace="Site.ViewModels" %>
+<%@ Import Namespace="Site.Data.API" %>
+<%
+    var currentModel = Model as BaseViewModel;
+    var defaultBackground = currentModel.ContentPage.Backgrounds.FirstOrDefault();
+%>
+<!doctype html>
+<!--[if IEMobile 7]><html itemscope itemtype="http://schema.org/" class="no-js iem7 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if lt IE 7]><html itemscope itemtype="http://schema.org/" class="no-js ie6 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html itemscope itemtype="http://schema.org/" class="no-js ie7 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html itemscope itemtype="http://schema.org/" class="no-js ie8 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html itemscope itemtype="http://schema.org/" class="no-js" lang="en" xmlns:og="http://ogp.me/ns#"
+xmlns:fb="http://www.Facebook.com/2008/fbml">
+<!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html itemscope itemtype="http://schema.org/" class="no-js" lang="en" xmlns:og="http://ogp.me/ns#"
+xmlns:fb="http://www.Facebook.com/2008/fbml">
+<!--<![endif]-->
+<head runat="server">
+    <%
+        // Redefine the current model object since this is in "runat=server"
+        var currentModel = Html.ViewData.Model as BaseViewModel;
+    %>
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+    <meta name="description" content="Full service digital creative agency building relationships between brands and consumers through social media and interactive experiences.">
+    <meta itemprop="name" content="Infuz">
+    <meta itemprop="description" content="Full service digital creative agency building relationships between brands and consumers through social media and interactive experiences.">
+    <meta itemprop="image" content="http://www.infuz.com/Content/images/fb-og-logo.png">
+    <meta name="keywords" content="Digital Agency, Digital Creative Agency, Rich Internet Applications, iPhone application development, User Centric Design, Social media, facebook applications, content development, content agency, mobile apps, Application design, ad agency, web marketing agency, User interface design, Interactive strategy, Information architecture, Flex/Flash applications, Flash design, Web design, Integrated Agency, St. Louis, midwest">
+    <meta name="author" content="Infuz, (c) Infuz Inc., 2012. All Rights Reserved.">
+    <meta property="og:title" content="Infuz: We Are Relationship Architects">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.infuz.com/">
+    <meta property="og:image" content="http://www.infuz.com/Content/images/fb-og-logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Infuz: We Are Relationship Architects">
+    <meta property="og:description" content="Full service digital creative agency building relationships between brands and consumers.">
+    <meta property="fb:app_id" content="224336427647940">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="//fast.fonts.com/cssapi/fc5373d8-c08f-4e90-9529-898863df2e34.css" rel="stylesheet">
+    <%= Bundle.Css()
+                .Add("/Content/css/main.css")
+                .Add("/Content/scripts/plugins/qtip/jquery.qtip.css")
+                .Add("/Content/scripts/plugins/qtip/dark/dark.css")
+                .WithAttribute("media", "screen")
+                .Render("/Content/cache/css/ScreenMaster_#.css")%>
+    <%= Bundle.JavaScript()
+                .Add("/Content/scripts/libs/modernizr-2.0.6.min.js")
+                .Add("/Content/scripts/libs/mdetect.min.js")
+                .Add("/Content/scripts/libs/jquery-1.7.1.min.js")
+                .Add("/Content/scripts/plugins/jquery.cookie.js")
+                .Add("/Content/scripts/plugins/jquery.touchwipe.min.js")
+                .Add("/Content/scripts/plugins/jquery.anystretch.min.js")
+                .Add("/Content/scripts/app.js")
+                .Add("/Content/scripts/Routings.js")
+                .Add("/Content/scripts/plugins/jquery.routes.js")
+                .Render("/Content/cache/scripts/MasterHead_#.js")%>
+
+    <%
+        if (currentModel != null)
+        {
+    %>
+    <%-- Google Analytics and Site Verification --%>
+    <%-- Place at the end of the <HEAD> tag content --%>
+    <script type="text/javascript" language="javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '<%= currentModel.GoogleAnalyticsCode %>']);
+        _gaq.push(['_setDomainName', 'infuz.com']);
+        //_gaq.push(['_trackPageview']); /* don't track here, we do it in the ajax */
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <%
+        }
+    %>
+</head>
+<body>
+    <noscript>
+        <style type="text/css">
+            #stage .pane
+            {
+                display: inherit;
+                background-image: url("<%= defaultBackground %>");
+            }
+        </style>
+    </noscript>
+    <div id="page">
+        <header id="header">
+            <% Html.RenderPartial("PrimaryNav"); %>
+            <aside class="ticker">
+                <div class="ticker-slides">
+                   <% Html.RenderPartial("SocialMediaTickerItems", currentModel.SocialMediaRotatorItems); %>
+                </div>
+            </aside>
+        </header>
+        <div id="stage">
+            <% Html.RenderPartial("SectionNav", Model); %>
+            <% Html.RenderPartial("PagingNav", Model); %>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <section class="pane" style="display: none;">
+                <div class="pane-inner">
+                    <div class="main"></div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div id="footer-inner">
+                <span class="icon icon-sm icon-cornerfade-tl"></span>
+                <span class="icon icon-sm icon-cornerfade-br"></span>
+                <p id="services">
+                    <a href="/Expertise/Services/">Digital</a> | 
+                    <a href="/Expertise/Services/Other-Services/">Social</a> | 
+                    <a href="/Expertise/Services/Other-Services/">Content</a> | 
+                    <a href="/Expertise/Services/Other-Services/">Mobile</a> | 
+                    <a href="/Expertise/Services/Other-Services/">Search</a> | © 2012 Infuz Inc.</p>
+                <div class="tray">
+                    <a href="#" id="link-help" rel="nofollow" style="display: none">
+                        <span class="icon icon-sm icon-help"></span>
+                        <span class="alt-content">Help</span>
+                    </a>
+                    <a href="/Contact/" id="link-enewsletter" rel="nofollow">
+                        <span class="icon icon-sm icon-newsletter"></span>
+                        <span class="alt-content">e-Newsletter</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Enewsletter Form -->
+    <div id="form-enewsletter" class="enewsletter-content" style="display: none;">
+        <h3>
+            Stay In Touch</h3>
+        <p>
+            Get to know us, see our latest work and uncover trends and insights with our quarterly
+            enewsletter.
+        </p>
+        <% Html.BeginForm("SubmitSubscribe", "Contact"); %>
+        <span class="status"></span>
+        <fieldset>
+            <p id="fullname-group">
+                <label>
+                    Name*<br>
+                    <%
+                        var textCssAttributes = new Dictionary<String, object>();
+                        textCssAttributes.Add("class", "text");
+                        var checkboxCssAttributes = new Dictionary<String, object>();
+                        checkboxCssAttributes.Add("class", "checkbox");
+                    %>
+                    <%= Html.TextBox("subscribe-fullname", String.Empty, textCssAttributes) %></label>
+            </p>
+            <p id="email-group">
+                <label>
+                    Email*<br>
+                    <%= Html.TextBox("subscribe-email", String.Empty, textCssAttributes) %></label>
+            </p>
+        </fieldset>
+        <p>
+            Can’t wait that long to get the dirt? Like us on <a href="http://www.facebook.com/infuzyourbrand"
+                target="_blank">Facebook</a> or follow us on <a href="http://twitter.com/infuz" target="_blank">
+                    Twitter</a> for more information.
+        </p>
+        <div class="group">
+            <button type="submit">Submit</button>
+        </div>
+        <p>
+            <small>* Required information</small></p>
+        <% Html.EndForm(); %>
+    </div>
+    <!-- /Enewsletter Form -->
+    <!-- Enewsletter Thank You -->
+    <div id="confirm-enewsletter" class="enewsletter-content" style="display: none;">
+        <h3>
+            Talk To You Soon</h3>
+        <p>
+            You're on the list. Check your inbox for a confirmation. Thank you for subscribing
+            to the the Infuz quarterly newsletter.
+        </p>
+        <div class="group">
+            <button>
+                Close</button>
+        </div>
+    </div>
+    <!-- /Enewsletter Thank You -->
+    <div id="page-overlay">
+        <img alt="Loading..." src="/Content/images/loader.gif" />
+        <span class="vshim"></span>
+    </div>
+    <div id="tutorial-overlay">
+        <img alt="Arrows" src="/Content/images/help-arrows.png" />
+        <span class="vshim"></span>
+    </div>
+    <div id="mobile-choice-overlay">
+        <p>We have detected that you are on a mobile device. For optimal performance you may wish to view the mobile version of our site.</p>
+        <p>
+            <a href="#" id="acceptMobile" title="Yes, send me to mobile" alt="Yes, send me to mobile"></a>
+            <a href="#" id="denyMobile" title="No, leave me here" alt="No, leave me here"></a>
+        </p>
+        <span class="vshim"></span>
+    </div>
+    <%= Bundle.JavaScript()
+            .Add("/Content/scripts/plugins/jquery.easing.1.3.js")
+            .Add("/Content/scripts/plugins/jquery.cookie.js")
+            .Add("/Content/scripts/plugins/jquery.cycle.all.min.js")
+            .Add("/Content/scripts/plugins/qtip/jquery.qtip.min.js")
+            .Add("/Content/scripts/plugins/jquery.fitvids.js")
+            .Add("/Content/scripts/main.js")
+            .Add("/Content/scripts/subscribe.js")
+            .Render("/Content/cache/scripts/MasterFoot_#.js")%>
+<script type="text/javascript" language="javascript">llactid=24506</script> 
+<script type="text/javascript" language="javascript" src="http://t1.trackalyzer.com/trackalyze.js"></script> 
+<script type="text/javascript">llfrmid = 24506</script> 
+<script type="text/javascript" src="http://formalyzer.com/formalyze_init.js"></script> 
+<script type="text/javascript" src="http://formalyzer.com/formalyze_call.js"></script> 
+</body>
+</html>

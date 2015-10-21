@@ -1,0 +1,97 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="SquishIt.Framework" %>
+<%@ Import Namespace="Site.Models" %>
+<%@ Import Namespace="Site.ViewModels" %>
+<%@ Import Namespace="Site.Data.API" %>
+<%
+    var currentModel = Model as BaseViewModel;
+%>
+<!doctype html>
+<!--[if IEMobile 7]><html itemscope itemtype="http://schema.org/" class="no-js iem7 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if lt IE 7]><html itemscope itemtype="http://schema.org/" class="no-js ie6 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html itemscope itemtype="http://schema.org/" class="no-js ie7 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html itemscope itemtype="http://schema.org/" class="no-js ie8 oldie" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.Facebook.com/2008/fbml"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html itemscope itemtype="http://schema.org/" class="no-js" lang="en" xmlns:og="http://ogp.me/ns#"
+xmlns:fb="http://www.Facebook.com/2008/fbml">
+<!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html itemscope itemtype="http://schema.org/" class="no-js" lang="en" xmlns:og="http://ogp.me/ns#"
+xmlns:fb="http://www.Facebook.com/2008/fbml">
+<!--<![endif]-->
+<head runat="server">
+    <%
+        // Redefine the current model object since this is in "runat=server"
+        var currentModel = Html.ViewData.Model as BaseViewModel;
+    %>
+    <title>Infuz - Text Adventure </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+    <meta name="description" content="Infuz">
+    <meta itemprop="name" content="Infuz">
+    <meta itemprop="description" content="Infuz">
+    <meta property="og:title" content="Infuz">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.infuz.com/">
+    <meta property="og:image" content="http://www.infuz.com/Content/images/fb-og-logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Infuz">
+    <meta property="fb:app_id" content="224336427647940">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <%= Bundle.Css()
+                .Add("/Content/css/textadv.css")
+                .WithAttribute("media", "all")
+                .Render("/Content/cache/css/TextAdvAllMaster_#.css")%>
+    <%= Bundle.JavaScript()
+                .Add("/Content/scripts/libs/modernizr-2.0.6.min.js")
+                .Add("/Content/scripts/libs/jquery-1.7.1.min.js")
+                .Add("/Content/scripts/plugins/jquery.tooltip.js")
+                .Add("/Content/scripts/TextADV.js")
+                .Render("/Content/cache/scripts/TextAdvHead_#.js")%>
+
+    <%
+        if (currentModel != null)
+        {
+    %>
+    <%-- Google Analytics and Site Verification --%>
+    <%-- Place at the end of the <HEAD> tag content --%>
+    <script type="text/javascript" language="javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '<%= currentModel.GoogleAnalyticsCode %>']);
+        _gaq.push(['_setDomainName', 'infuz.com']);
+        //_gaq.push(['_trackPageview']); /* don't track here, we do it in the ajax */
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <%
+        }
+    %>
+</head>
+<body>
+    <div id="page">
+        <form id="commandForm">
+        <span>
+            <div id="viewPort">
+                <noscript>
+                    Connection to [www.infuz.com] refused. You must have javascript to connect. Please
+                    enable it, or go to <a href="http://www.infuz.com/">our website</a> instead.</noscript>
+            </div>
+            >
+            <input id="commandLine" type="text" class="text" />
+            <input id="submit" type="button" value="Submit Command" style="display: none" />
+        </span>
+        </form>
+    </div>
+<script type="text/javascript" language="javascript">    llactid = 24506</script> 
+<script type="text/javascript" language="javascript" src="http://t1.trackalyzer.com/trackalyze.js"></script> 
+<script type="text/javascript">    llfrmid = 24506</script> 
+<script type="text/javascript" src="http://formalyzer.com/formalyze_init.js"></script> 
+<script type="text/javascript" src="http://formalyzer.com/formalyze_call.js"></script> 
+</body>
+</html>

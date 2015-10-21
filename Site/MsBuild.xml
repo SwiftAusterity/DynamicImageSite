@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   
+    <PropertyGroup>
+        <WebProjectFolder>$(SolutionDir)</WebProjectFolder>
+    </PropertyGroup>
+
+    <Import Project="Web.csproj"/>
+   
+    <Target Name="Deploy">
+        <ItemGroup>
+            <BinFiles Include="bin\*.*;"/>
+            <DeleteAfterBuild Include="$(targetServer)\web.*.config" />
+        </ItemGroup>
+   
+        <CreateItem
+            Include="@(Content->'%(RelativeDir)%(Filename)%(Extension)')"
+            AdditionalMetadata="Dir=%(RelativeDir)">
+            <Output TaskParameter="Include" ItemName="contentFiles"/>
+        </CreateItem>
+       
+        <Copy SourceFiles="@(contentFiles)"
+         DestinationFiles="@(contentFiles->'$(targetServer)\%(Dir)%(Filename)%(Extension)')"
+         ContinueOnError="false"/>
+       
+        <Copy SourceFiles="@(BinFiles)"
+        DestinationFiles="@(BinFiles->'$(targetServer)\bin\%(RecursiveDir)%(Filename)%(Extension)')"
+        ContinueOnError="true"/>
+                	
+	<Delete Files="@(DeleteAfterBuild)" />
+    </Target>
+
+    <Target Name="BuildClean">
+        <Message Text="" />
+        <Message Text="Deleting \build folder ..." />
+        <RemoveDir Directories="$(targetServer)" ContinueOnError="true"/>
+        <Message Text="Done" />
+    </Target>
+</Project>

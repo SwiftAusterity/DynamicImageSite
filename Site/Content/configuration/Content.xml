@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPages>
+    <ContentPage key="/m/">
+        <Title>Digital Marketing &amp; Social Media | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz</Meta>
+        <PartialLocation>~/Views/Root/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Root/expertise_m.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/expertise.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/">
+        <Title>Digital Marketing &amp; Social Media | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz</Meta>
+        <PartialLocation>~/Views/Root/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Root/expertise.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/expertise.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Feature-Tidy-Cats">
+        <Title>Customer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ - A Digital Agency</Title>
+        <Meta>Tidy Cats</Meta>
+        <PartialLocation>~/Views/Root/Feature-Tidy-Cats.ascx</PartialLocation>
+        <Background>/Content/Images/Root/tidy-cats.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/tidy-cats.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Feature-Charter">
+        <Title>Digital Marketing &amp; Search - Charter Business | INFUZ - A Digital Agency</Title>
+        <Meta>Charter Business</Meta>
+        <PartialLocation>~/Views/Root/Feature-Charter.ascx</PartialLocation>
+        <Background>/Content/Images/Root/charter.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/charter.jpg</Thumbnail>
+    </ContentPage>
+    <!--
+  <ContentPage key="/Feature-NCCS">
+    <Title>Infuz: Featured Work: The NCCS</Title>
+    <Meta>NCCS</Meta>
+    <PartialLocation>~/Views/Root/Feature-NCCS.ascx</PartialLocation>
+    <Background>/Content/Images/Root/nccs.jpg</Background>
+    <Thumbnail>/Content/Images/Root/thumb/nccs.jpg</Thumbnail>
+  </ContentPage>
+  -->
+    <ContentPage key="/Feature-United-Way">
+        <Title>Digital Marketing Strategy - United Way | INFUZ - A Digital Agency</Title>
+        <Meta>United Way</Meta>
+        <PartialLocation>~/Views/Root/Feature-United-Way.ascx</PartialLocation>
+        <Background>/Content/Images/Root/united_way.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/united_way.jpg</Thumbnail>
+    </ContentPage>
+    <!--
+  <ContentPage key="/Feature-SXSW">
+    <Title>Infuz: Featured Work: SXSW</Title>
+    <Meta>SXSW</Meta>
+    <PartialLocation>~/Views/Root/sxsw.ascx</PartialLocation>
+    <Background>/Content/Images/Root/sxsw.jpg</Background>
+    <Thumbnail>/Content/Images/Root/thumb/sxsw.jpg</Thumbnail>
+  </ContentPage>
+  -->
+    <ContentPage key="/Feature-LouFest">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ - A Digital Agency</Title>
+        <Meta>LouFest</Meta>
+        <PartialLocation>~/Views/Root/Feature-LouFest.ascx</PartialLocation>
+        <Background>/Content/Images/Root/loufest.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/loufest.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Feature-Labs">
+        <Title>Social Media Tools, Applications &amp; Integration | INFUZ - A Digital Agency</Title>
+        <Meta>Labs</Meta>
+        <PartialLocation>~/Views/Root/Feature-Labs.ascx</PartialLocation>
+        <Background>/Content/Images/Root/labs.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/labs.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Feature-People">
+        <Title>Social Media Specialists, Web Designers, Web Developers  | INFUZ - A Digital Agency</Title>
+        <Meta>People</Meta>
+        <PartialLocation>~/Views/Root/Feature-People.ascx</PartialLocation>
+        <Background>/Content/Images/Root/people.jpg</Background>
+        <Thumbnail>/Content/Images/Root/thumb/people.jpg</Thumbnail>
+    </ContentPage>
+
+    <ContentPage key="/m/Missing/">
+        <Title>Oops, This Page is Missing | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz Missing 404</Meta>
+        <PartialLocation>~/Views/Missing/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Errors/missing.jpg</Background>
+        <Thumbnail>/Content/Images/Errors/thumb/missing.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Missing/">
+        <Title>Oops, This Page is Missing | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz Missing 404</Meta>
+        <PartialLocation>~/Views/Missing/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Errors/missing.jpg</Background>
+        <Thumbnail>/Content/Images/Errors/thumb/missing.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/m/Error/">
+        <Title>Oops, An Error Occurred | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz Error 500</Meta>
+        <PartialLocation>~/Views/Error/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Errors/error.jpg</Background>
+        <Thumbnail>/Content/Images/Errors/thumb/error.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Error/">
+        <Title>Oops, An Error Occurred | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz Error 500</Meta>
+        <PartialLocation>~/Views/Error/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Errors/error.jpg</Background>
+        <Thumbnail>/Content/Images/Errors/thumb/error.jpg</Thumbnail>
+    </ContentPage>
+
+    <ContentPage key="/People/">
+        <Title>Social Media Strategists, Designers, Developers | INFUZ - A Digital Agency</Title>
+        <Meta>People</Meta>
+        <PartialLocation>~/Views/People/Base.ascx</PartialLocation>
+        <Background>/Content/Images/People/Index.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/People/Leadership/">
+        <Title>Digital Marketing Leadership | INFUZ - A Digital Agency</Title>
+        <Meta>Leadership</Meta>
+        <PartialLocation>~/Views/People/Leadership.ascx</PartialLocation>
+        <Background>/Content/Images/People/Leadership.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Leadership.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/People/Cat-People/">
+        <Title>Cat People | INFUZ - A Digital Agency</Title>
+        <Meta>Cat People</Meta>
+        <PartialLocation>~/Views/People/Cat-People.ascx</PartialLocation>
+        <Background>/Content/Images/People/Cat_People.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Cat_People.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/People/Outdoorsmen/">
+        <Title>Outdoorsmen | INFUZ - A Digital Agency</Title>
+        <Meta>Outdoorsmen</Meta>
+        <PartialLocation>~/Views/People/Outdoorsmen.ascx</PartialLocation>
+        <Background>/Content/Images/People/Outdoorsmen.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Outdoorsmen.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/People/Sports-Fans/">
+        <Title>Sports Fans | INFUZ - A Digital Agency</Title>
+        <Meta>Sports Fans</Meta>
+        <PartialLocation>~/Views/People/Sports-Fans.ascx</PartialLocation>
+        <Background>/Content/Images/People/Sports_Fans.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Sports_Fans.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/People/Gamers/">
+        <Title>Gamers | INFUZ - A Digital Agency</Title>
+        <Meta>Gamers</Meta>
+        <PartialLocation>~/Views/People/Gamers.ascx</PartialLocation>
+        <Background>/Content/Images/People/Gamers.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Gamers.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/People/Musicians/">
+        <Title>Musicians | INFUZ - A Digital Agency</Title>
+        <Meta>Musicians</Meta>
+        <PartialLocation>~/Views/People/Musicians.ascx</PartialLocation>
+        <Background>/Content/Images/People/Musicians.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Musicians.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/People/Food-Lovers/">
+        <Title>Food Lovers | INFUZ - A Digital Agency</Title>
+        <Meta>Food Lovers</Meta>
+        <PartialLocation>~/Views/People/Foodies.ascx</PartialLocation>
+        <Background>/Content/Images/People/Foodies.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Foodies.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="Jonathan-Sackett">
+        <Title>Jonathan Sackett – Senior Account Executive | INFUZ - A Digital Agency</Title>
+        <Meta>Jonathan Sackett – Senior Account Executive</Meta>
+        <PartialLocation>~/Views/Shared/People/JonathanSackett.ascx</PartialLocation>
+        <Background>/Content/Images/People/Jonathan_Sackett.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Jonathan_Sackett.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="Kelli-Schwahn">
+        <Title>Kelli Schwahn – Executive Assistant | INFUZ - A Digital Agency</Title>
+        <Meta>Kelli Schwahn – Executive Assistant</Meta>
+        <PartialLocation>~/Views/Shared/People/KelliSchwahn.ascx</PartialLocation>
+        <Background>/Content/Images/People/Kelli_Schwahn.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Kelli_Schwahn.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="Heath-Harris">
+        <Title>Heath Harris – Senior Art Director | INFUZ - A Digital Agency</Title>
+        <Meta>Heath Harris – Senior Art Director</Meta>
+        <PartialLocation>~/Views/Shared/People/HeathHarris.ascx</PartialLocation>
+        <Background>/Content/Images/People/Heath_Harris.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Heath_Harris.jpg</Thumbnail>
+        <SocialFeed source="twitter">dj_denim</SocialFeed>
+        <SocialFeed source="flickr">djdenim</SocialFeed>
+        <SocialFeed source="tumblr">heathropolis</SocialFeed>
+        <SocialFeed source="tumblr">logosfeaturingthesaintlouisarch</SocialFeed>
+    </ContentPage>
+    <ContentPage key="Erin-Fiehler">
+        <Title>Erin Fiehler – Research Specialist | INFUZ - A Digital Agency</Title>
+        <Meta>Erin Fiehler – Research Specialist</Meta>
+        <PartialLocation>~/Views/Shared/People/ErinFiehler.ascx</PartialLocation>
+        <Background>/Content/Images/People/Erin_Fiehler.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Erin_Fiehler.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="Neil-Monroe">
+        <Title>Neil Monroe – Senior Interactive Developer | INFUZ - A Digital Agency</Title>
+        <Meta>Neil Monroe – Senior Interactive Developer</Meta>
+        <PartialLocation>~/Views/Shared/People/NeilMonroe.ascx</PartialLocation>
+        <Background>/Content/Images/People/Neil_Monroe.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Neil_Monroe.jpg</Thumbnail>
+        <SocialFeed source="yelp">neilmonroe</SocialFeed>
+    </ContentPage>
+    <ContentPage key="Marc-Brooks">
+        <Title>Marc Brooks – Hack Prime | INFUZ - A Digital Agency</Title>
+        <Meta>Marc Brooks – Hack Prime</Meta>
+        <PartialLocation>~/Views/Shared/People/MarcBrooks.ascx</PartialLocation>
+        <Background>/Content/Images/People/Marc_Brooks.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Marc_Brooks.jpg</Thumbnail>
+        <SocialFeed source="lastfmtrack">idisposable</SocialFeed>
+        <SocialFeed source="twitter">idisposable</SocialFeed>
+    </ContentPage>
+    <ContentPage key="Michael-Bischoff">
+        <Title>Michael Bischoff - Interactive Designer | INFUZ - A Digital Agency</Title>
+        <Meta>Michael Bischoff - Interactive Designer</Meta>
+        <PartialLocation>~/Views/Shared/People/MichaelBischoff.ascx</PartialLocation>
+        <Background>/Content/Images/People/Michael_Bischoff.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Michael_Bischoff.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="Erica-Smith">
+        <Title>Erica Smith - Digital Engagement Specialist | INFUZ - A Digital Agency</Title>
+        <Meta>Erica Smith - Digital Engagement Specialist</Meta>
+        <PartialLocation>~/Views/Shared/People/EricaSmith.ascx</PartialLocation>
+        <Background>/Content/Images/People/Erica_Smith.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Erica_Smith.jpg</Thumbnail>
+        <SocialFeed source="twitter">ericasmith</SocialFeed>
+    </ContentPage>
+    <ContentPage key="Jason-Fiehler">
+        <Title>Jason Fiehler – Founder &amp; CEO | INFUZ - A Digital Agency</Title>
+        <Meta>Jason Fiehler – Founder &amp; CEO</Meta>
+        <PartialLocation>~/Views/Shared/People/JasonFiehler.ascx</PartialLocation>
+        <Background>/Content/Images/People/Jason_Fiehler.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Jason_Fiehler.jpg</Thumbnail>
+        <SocialFeed source="twitter">jasonfiehler</SocialFeed>
+        <SocialFeed source="spotify">jasonfiehler</SocialFeed>
+    </ContentPage>
+    <ContentPage key="Jill-Schanzle">
+        <Title>Jill Schanzle – Chief Operating Officer | INFUZ - A Digital Agency</Title>
+        <Meta>Jill Schanzle – Chief Operating Officer</Meta>
+        <PartialLocation>~/Views/Shared/People/JillSchanzle.ascx</PartialLocation>
+        <Background>/Content/Images/People/Jill_Schanzle.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Jill_Schanzle.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="Chris-Sturgeon">
+        <Title>Chris Sturgeon – VP, Account Services | INFUZ - A Digital Agency</Title>
+        <Meta>Chris Sturgeon – VP, Account Services</Meta>
+        <PartialLocation>~/Views/Shared/People/ChrisSturgeon.ascx</PartialLocation>
+        <Background>/Content/Images/People/Chris_Sturgeon.jpg</Background>
+        <Thumbnail>/Content/Images/People/thumb/Chris_Sturgeon.jpg</Thumbnail>
+        <SocialFeed source="linkedin">chris-sturgeon</SocialFeed>
+    </ContentPage>
+    <ContentPage key="/m/Work/">
+        <Title>Digital Marketing &amp; Strategy | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Index_m.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/">
+        <Title>Digital Marketing &amp; Strategy | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Image1">
+        <Title>Yesterday's News - Digital and Social Marketing | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image5.ascx</PartialLocation>
+        <Background>/Content/Images/Work/YN_BagBuilder.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/YN_BagBuilder.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Yesterday's News Bag Builder</strong></p><p>Customers were asked to use their creativity to design the season’s new "it" handbag with the <a href="http://dogooder.zufni.com/HandbagDesignContest/BagBuilder/" target="_blank">Bag Builder tool</a>. This Flash application used art from the new packaging and other paper textures inspired by the new brand look.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image2">
+        <Title>Contegix - Digital Marketing and Search Strategy | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image2.ascx</PartialLocation>
+        <Thumbnail>/Content/Images/Work/thumb/Contegix.jpg</Thumbnail>
+        <Background>/Content/Images/Work/Contegix.jpg</Background>
+        <InfoText>
+            <![CDATA[<p><strong>Contegix Website and Branding</strong></p><p>With the launch of <a href="http://www.contegix.com" target="_blank">Contegix.com</a>, Infuz developed the new brand positioning and aesthetic for this top-tier technology and cloud hosting provider. Infuz also developed a set of brand guidelines that included service iconography and a logo redesign.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image3">
+        <Title>Tidy Cats - Digital Marketing Strategy | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image9.ascx</PartialLocation>
+        <Background>/Content/Images/Work/TC_Interactive_Home.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/TC_Interactive_Home.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Tidy Cats Interactive Home Tour</strong></p><p>The <a href="http://www.tidycats.com/WelcomeHome/InteractiveTour.aspx" target="_blank">interactive home tour</a> showcased different tips and tricks to help create a welcoming home for family and guests. Visitors could explore many different rooms of a home and read from five categories of tips. The content was driven by a CMS to highlight new tips each week.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image4">
+        <Title>Intelispend - Digital, Social Media, Content &amp; Search Marketing | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image4.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Intelispend_Home.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/Intelispend_Home.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Intelispend.com</strong></p><p>Infuz designed and launched the <a href="http://www.InteliSpend.com" target="_blank">InteliSpend.com</a> site to reflect the company’s new brand. We designed a custom set of icons and art to reflect the friendly and accessible nature of the organization. As one of the premier pre-paid technology solution providers in the world, InteliSpend also needed a robust CMS to manage the product offerings and drive new sales.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image5">
+        <Title>Energizer - Digital &amp; Social Media Marketing Strategy | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image3.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Energizer_STM.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/Energizer_STM.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Energizer &#38; VH1 Save The Music</strong></p><p>Infuz designed and developed a central component of <a href="http://www.facebook.com/EnergizerBunny?sk=app_101392166609521" target="_blank">Energizer’s</a> communication and engagement strategy that inlcuded a VH1 partnership promotion.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image6">
+        <Title>Prime 1000 - Digital Marketing Strategy | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image6.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Prime.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/Prime.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Prime 1000 Brand Identity</strong></p><p>Infuz crafted a new logo and tagline for Prime 1000, one St. Louis’ top steakhouses, located in the heart of downtown’s loft district.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image7">
+        <Title>Social Media Engagement - Twitter | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image7.ascx</PartialLocation>
+        <Background>/Content/Images/Work/SOT_Spiral_Graph.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/SOT_Spiral_Graph.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>The State of Twitter Report</strong></p><p>A sample graphic from the <a href="http://report.stltweets.com/" target="_blank">State of Twitter STL 2011 Report</a> highlighting the most popular types of links being shared in St. Louis. The report was assembled using the STL Tweets platform, allowing us to view our city from a unique perspective by collecting data about what St. Louis is sharing and discussing on Twitter.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image8">
+        <Title>Social Media Engagement - St. Louis Cardinals | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image1.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Cardinals_InfoGraphic.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/Cardinals_InfoGraphic.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>St. Louis Cardinals Twitter Infographic</strong></p><p>Infuz captured the story of the <a href="http://bit.ly/cardinalstweets" target="_blank">St. Louis Cardinals</a> and their amazing 2011 baseball season through the conversations of fans on Twitter. From trending topics to milestones in the season, we visually wanted to pay homage to the greatest fans in baseball and show that data can tell a great tale. </p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Image9">
+        <Title>Social Media Engagement - Twitter | INFUZ</Title>
+        <Meta>Infuz Work</Meta>
+        <PartialLocation>~/Views/Work/Image8.ascx</PartialLocation>
+        <Background>/Content/Images/Work/STL_Index.jpg</Background>
+        <Thumbnail>/Content/Images/Work/thumb/STL_Index.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>STL Index Website</strong></p><p><a href="http://www.stlindex.com" target="_blank">STL Index</a> is a data-centric approach to measuring online influence in St. Louis. It’s the first tool for St. Louisans and others to learn about their Twitter influence within the Metro Area.</p>]]>
+        </InfoText>
+    </ContentPage>
+
+    <ContentPage key="/m/Work/Digital-Social-Tidy-Cats/">
+        <Title>Consumer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ</Title>
+        <Meta></Meta>
+        <PartialLocation>~/Views/Work/Tidy-Cats/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Tidy-Cats/Index_m.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Tidy-Cats/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social-Tidy-Cats/">
+        <Title>Consumer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ</Title>
+        <Meta></Meta>
+        <PartialLocation>~/Views/Work/Tidy-Cats/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Tidy-Cats/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Tidy-Cats/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social-Tidy-Cats/Image1">
+        <Title>Consumer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Tidy-Cats/Image1.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Tidy-Cats/tidy_cats_scrnshot_1.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Tidy-Cats/thumb/tidy_cats_scrnshot_1.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>The Tidy Cats Online Community</strong></p><p><a rel="nofollow" target="_blank" href="http://www.tidycats.com/community/">The Tidy Cats Online Community</a> features games and content that keep their consumers active and participating.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social-Tidy-Cats/Image2">
+        <Title>Consumer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Tidy-Cats/Image2.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Tidy-Cats/tidy_cats_scrnshot_2.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Tidy-Cats/thumb/tidy_cats_scrnshot_2.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>The Tidy Cats Online Community</strong></p><p>We created <a rel="nofollow" target="_blank" href="http://www.tidycats.com/Community/PurrfectPic.aspx">Purrfect Pic</a>, the ultimate "hot or not" for cats contains over 20,000 user generated photos. </p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social-Tidy-Cats/Image3">
+        <Title>Consumer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Tidy-Cats/Image3.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Tidy-Cats/tidy_cats_scrnshot_3.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Tidy-Cats/thumb/tidy_cats_scrnshot_3.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>The Tidy Cats Online Community</strong></p><p>We created the Flash game <a rel="nofollow" target="_blank" href="http://www.tidycats.com/Games/CatnapClimb.aspx">Catnap Climb</a> which has an average play time of 2.74 minutes.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social-Tidy-Cats/Image4">
+        <Title>Consumer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Tidy-Cats/Image4.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Tidy-Cats/tidy_cats_scrnshot_4.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Tidy-Cats/thumb/tidy_cats_scrnshot_4.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Tidy Cats Facebook Page</strong></p><p>After establishing the brand's <a rel="nofollow" target="_blank" href="http://www.facebook.com/tidycats">official Facebook page</a> we attracted nearly 150,000 page "likes". That's 1000 per day.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social-Tidy-Cats/Image5">
+        <Title>Consumer Engagement &amp; Social Media Strategy - Tidy Cats | INFUZ</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Tidy-Cats/Image5.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Tidy-Cats/tidy_cats_scrnshot_5.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Tidy-Cats/thumb/tidy_cats_scrnshot_5.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Tidy Cats Litter Selector</strong></p><p>The <a rel="nofollow" target="_blank" href="http://www.tidycats.com/LitterSelector/">Tidy Cats Litter Selector</a> allows users to answer a few simple questions about their lifestyle and cats' litter environment to help them choose the proper litter solution.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/m/Work/Digital-Search-Charter-Business/">
+        <Title>Digital Marketing Strategy &amp; SEO - Charter Business</Title>
+        <Meta></Meta>
+        <PartialLocation>~/Views/Work/Charter/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Charter/Index_m.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Charter/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Search-Charter-Business/">
+        <Title>Digital Marketing Strategy &amp; SEO - Charter Business</Title>
+        <Meta></Meta>
+        <PartialLocation>~/Views/Work/Charter/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Charter/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Charter/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Search-Charter-Business/Image1">
+        <Title>Digital Marketing Strategy &amp; SEO - Charter Business</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Charter/Image1.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Charter/charter_scrnshot_1.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Charter/thumb/charter_scrnshot_1.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Charter Business</strong></p><p>Our redesign process included usability studies along with current and potential customer feedback to help inform the new website architecture.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Search-Charter-Business/Image2">
+        <Title>Digital Marketing Strategy &amp; SEO - Charter Business</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Charter/Image2.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Charter/charter_scrnshot_2.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Charter/thumb/charter_scrnshot_2.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Charter Business</strong></p><p>User feedback helped us determine important information and how and where to feature it throughout the site.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Search-Charter-Business/Image3">
+        <Title>Digital Marketing Strategy &amp; SEO - Charter Business</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Charter/Image3.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Charter/charter_scrnshot_3.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Charter/thumb/charter_scrnshot_3.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Charter Business</strong></p><p>Our research helped us determine not only how customers identify themselves, but also how they shop for services.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Search-Charter-Business/Image4">
+        <Title>Digital Marketing Strategy &amp; SEO - Charter Business</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Charter/Image4.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Charter/charter_scrnshot_4.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Charter/thumb/charter_scrnshot_4.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Charter Business</strong></p><p>We developed the <a href="http://www.charterbusiness.com/bundle-builder.aspx" target="_blank">Bundle Builder</a>, a user-centered shopping cart system that integrated with Charter Business back-end database.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Search-Charter-Business/Image5">
+        <Title>Digital Marketing Strategy &amp; SEO - Charter Business</Title>
+        <Meta>slideshow</Meta>
+        <PartialLocation>~/Views/Work/Charter/Image5.ascx</PartialLocation>
+        <Background>/Content/Images/Work/Charter/charter_scrnshot_5.jpg</Background>
+        <Thumbnail>/Content/Images/Work/Charter/thumb/charter_scrnshot_5.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>Charter Business</strong></p><p>Flexible enough to accommodate multiple products, restrictions and revolving promotional offers, the <a href="https://www.charterbusiness.com/online-order/charter-business-bundles.aspx" target="_blank">Bundle Builder</a> was then user tested and validated significant improvements in cart completion.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/m/Work/Digital-Social/">
+        <Title>Social Media Integration &amp; Fundraising - NCCS | INFUZ</Title>
+        <Meta>National Children’s Cancer Society</Meta>
+        <PartialLocation>~/Views/Work/NCCS/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/NCCS/Index_m.jpg</Background>
+        <Thumbnail>/Content/Images/Work/NCCS/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social/">
+        <Title>Social Media Integration &amp; Fundraising - NCCS | INFUZ</Title>
+        <Meta>National Children’s Cancer Society</Meta>
+        <PartialLocation>~/Views/Work/NCCS/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/NCCS/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Work/NCCS/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social/Image1">
+        <Title>Social Media Integration &amp; Fundraising - NCCS | INFUZ</Title>
+        <Meta>National Children’s Cancer Society</Meta>
+        <PartialLocation>~/Views/Work/NCCS/Image1.ascx</PartialLocation>
+        <Background>/Content/Images/Work/NCCS/nccs_scrnshot_1.jpg</Background>
+        <Thumbnail>/Content/Images/Work/NCCS/thumb/nccs_scrnshot_1.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>National Children’s Cancer Society</strong></p><p>We gave visitors a variety of tools to help engage with the <a href="http://www.facebook.com/thenccs?sk=app_209341512454884" target="_blank">NCCS</a>. From volunteer opportunities to establishing a mobile donation program, people could contribute through multiple ways.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social/Image2">
+        <Title>Social Media Integration &amp; Fundraising - NCCS | INFUZ</Title>
+        <Meta>National Children’s Cancer Society</Meta>
+        <PartialLocation>~/Views/Work/NCCS/Image2.ascx</PartialLocation>
+        <Background>/Content/Images/Work/NCCS/nccs_scrnshot_2.jpg</Background>
+        <Thumbnail>/Content/Images/Work/NCCS/thumb/nccs_scrnshot_2.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>National Children’s Cancer Society</strong></p><p>The donation scoreboard featured <a href="http://www.facebook.com/thenccs?sk=app_104124063024994" target="_blank">donations</a> based on the state of the donor. Donation totals from Team East and West were aggregated in real time.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social/Image3">
+        <Title>Social Media Integration &amp; Fundraising - NCCS | INFUZ</Title>
+        <Meta>National Children’s Cancer Society</Meta>
+        <PartialLocation>~/Views/Work/NCCS/Image3.ascx</PartialLocation>
+        <Background>/Content/Images/Work/NCCS/nccs_scrnshot_3.jpg</Background>
+        <Thumbnail>/Content/Images/Work/NCCS/thumb/nccs_scrnshot_3.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>National Children’s Cancer Society</strong></p><p>For new visitors and fans learning more about the <a href="http://www.facebook.com/thenccs?sk=app_209341512454884" target="_blank">NCCS</a>, we showcased different programs and efforts running concurrently with the campaign.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital-Social/Image4">
+        <Title>Social Media Integration &amp; Fundraising - NCCS | INFUZ</Title>
+        <Meta>National Children’s Cancer Society</Meta>
+        <PartialLocation>~/Views/Work/NCCS/Image4.ascx</PartialLocation>
+        <Background>/Content/Images/Work/NCCS/nccs_scrnshot_4.jpg</Background>
+        <Thumbnail>/Content/Images/Work/NCCS/thumb/nccs_scrnshot_4.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>National Children’s Cancer Society</strong></p><p>The stories of the children were compelling content that we needed to tell. The featured “Players” gallery featured a wide range of ages and narratives that illustrated the great work the <a href="http://www.facebook.com/thenccs?sk=app_209341512454884" target="_blank">NCCS</a> does.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/m/Work/Digital/">
+        <Title>Digital Marketing Strategy - United Way | INFUZ</Title>
+        <Meta>United Way of Greater St. Louis</Meta>
+        <PartialLocation>~/Views/Work/United-Way/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/United-Way/Index_m.jpg</Background>
+        <Thumbnail>/Content/Images/Work/United-Way/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital/">
+        <Title>Digital Marketing Strategy - United Way | INFUZ</Title>
+        <Meta>United Way of Greater St. Louis</Meta>
+        <PartialLocation>~/Views/Work/United-Way/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/United-Way/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Work/United-Way/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Digital/Image1">
+        <Title>Digital Marketing Strategy - United Way | INFUZ</Title>
+        <Meta>United Way of Greater St. Louis</Meta>
+        <PartialLocation>~/Views/Work/United-Way/Image1.ascx</PartialLocation>
+        <Background>/Content/Images/Work/United-Way/united_way_1.jpg</Background>
+        <Thumbnail>/Content/Images/Work/United-Way/thumb/united_way_1.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>helpingpeople.org</strong></p><p>We helped <a href="http://helpingpeople.infuzyourbrand.com/#/trinette" target="_blank">United Way of Greater St. Louis</a> share personal, real-life stories of community members that have overcome challenges with their help.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital/Image2">
+        <Title>Digital Marketing Strategy - United Way | INFUZ</Title>
+        <Meta>United Way of Greater St. Louis</Meta>
+        <PartialLocation>~/Views/Work/United-Way/Image2.ascx</PartialLocation>
+        <Background>/Content/Images/Work/United-Way/united_way_2.jpg</Background>
+        <Thumbnail>/Content/Images/Work/United-Way/thumb/united_way_2.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>helpingpeople.org</strong></p><p>We helped <a href="http://helpingpeople.infuzyourbrand.com/#/shayna" target="_blank">United Way of Greater St. Louis</a> share personal, real-life stories of community members that have overcome challenges with their help.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital/Image3">
+        <Title>Digital Marketing Strategy - United Way | INFUZ</Title>
+        <Meta>United Way of Greater St. Louis</Meta>
+        <PartialLocation>~/Views/Work/United-Way/Image3.ascx</PartialLocation>
+        <Background>/Content/Images/Work/United-Way/united_way_3.jpg</Background>
+        <Thumbnail>/Content/Images/Work/United-Way/thumb/united_way_3.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>helpingpeople.org</strong></p><p>The <a href="http://helpingpeople.infuzyourbrand.com/#/calculator" target="_blank">donation calculator</a> allows users to preview real-life examples of how donations add up and what they actually go towards.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital/Image4">
+        <Title>Digital Marketing Strategy - United Way | INFUZ</Title>
+        <Meta>United Way of Greater St. Louis</Meta>
+        <PartialLocation>~/Views/Work/United-Way/Image4.ascx</PartialLocation>
+        <Background>/Content/Images/Work/United-Way/united_way_4.jpg</Background>
+        <Thumbnail>/Content/Images/Work/United-Way/thumb/united_way_4.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>helpingpeople.org</strong></p><p>The <a href="http://helpingpeople.infuzyourbrand.com/#/map" target="_blank">community map</a> shows not only how many people were helped within a particular county, but also the number of agencies across the area that provided support.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Digital/Image5">
+        <Title>Digital Marketing Strategy - United Way | INFUZ</Title>
+        <Meta>United Way of Greater St. Louis</Meta>
+        <PartialLocation>~/Views/Work/United-Way/Image5.ascx</PartialLocation>
+        <Background>/Content/Images/Work/United-Way/united_way_5.jpg</Background>
+        <Thumbnail>/Content/Images/Work/United-Way/thumb/united_way_5.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>helpingpeople.org</strong></p><p>The website not only provided real-life examples, but allowed users to get more information about <a href="http://helpingpeople.infuzyourbrand.com/#/getinvolved" target="_blank">donating and volunteering</a> with United Way of Greater St. Louis.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/m/Work/Social/">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ</Title>
+        <Meta>LouFest Music Festival</Meta>
+        <PartialLocation>~/Views/Work/LouFest/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/LouFest/Index_m.jpg</Background>
+        <Thumbnail>/Content/Images/Work/LouFest/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Social/">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ</Title>
+        <Meta>LouFest Music Festival</Meta>
+        <PartialLocation>~/Views/Work/LouFest/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Work/LouFest/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Work/LouFest/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Work/Social/Image1">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ</Title>
+        <Meta>LouFest Music Festival</Meta>
+        <PartialLocation>~/Views/Work/LouFest/Image1.ascx</PartialLocation>
+        <Background>/Content/Images/Work/LouFest/loufest_scrnshot_1.jpg</Background>
+        <Thumbnail>/Content/Images/Work/LouFest/thumb/loufest_scrnshot_1.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>LouFest Twitter Scavenger Hunt</strong></p><p>Our live tweet wall displayed real time tweets from the event that concert-goers could interact with.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Social/Image2">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ</Title>
+        <Meta>LouFest Music Festival</Meta>
+        <PartialLocation>~/Views/Work/LouFest/Image2.ascx</PartialLocation>
+        <Background>/Content/Images/Work/LouFest/loufest_scrnshot_2.jpg</Background>
+        <Thumbnail>/Content/Images/Work/LouFest/thumb/loufest_scrnshot_2.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>LouFest Twitter Scavenger Hunt</strong></p><p>Scavenger hunt winners were awarded a vintage upcycled t-shirt that was screen printed with I # STL.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Social/Image3">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ</Title>
+        <Meta>LouFest Music Festival</Meta>
+        <PartialLocation>~/Views/Work/LouFest/Image3.ascx</PartialLocation>
+        <Background>/Content/Images/Work/LouFest/loufest_scrnshot_3.jpg</Background>
+        <Thumbnail>/Content/Images/Work/LouFest/thumb/loufest_scrnshot_3.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>LouFest Twitter Scavenger Hunt</strong></p><p>Built on our <a href="http://www.stltweets.com" target="_blank">STLtweets.com</a> engine, loufesttweets.com aggregated tweets about the event.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Social/Image4">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ</Title>
+        <Meta>LouFest Music Festival</Meta>
+        <PartialLocation>~/Views/Work/LouFest/Image4.ascx</PartialLocation>
+        <Background>/Content/Images/Work/LouFest/loufest_scrnshot_4.jpg</Background>
+        <Thumbnail>/Content/Images/Work/LouFest/thumb/loufest_scrnshot_4.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>LouFest Twitter Scavenger Hunt</strong></p><p>Scavenger hunt photos were also displayed on the large screens near the stage.</p>]]>
+        </InfoText>
+    </ContentPage>
+    <ContentPage key="/Work/Social/Image5">
+        <Title>Social Media Integration &amp; Social Media Development - LouFest | INFUZ</Title>
+        <Meta>LouFest Music Festival</Meta>
+        <PartialLocation>~/Views/Work/LouFest/Image5.ascx</PartialLocation>
+        <Background>/Content/Images/Work/LouFest/loufest_scrnshot_5.jpg</Background>
+        <Thumbnail>/Content/Images/Work/LouFest/thumb/loufest_scrnshot_5.jpg</Thumbnail>
+        <InfoText>
+            <![CDATA[<p><strong>LouFest Twitter Scavenger Hunt</strong></p><p>Moderating the scavenger hunt stream.</p>]]>
+        </InfoText>
+    </ContentPage>
+
+    <ContentPage key="/Clients/">
+        <Title>Successful Digital Campaigns - Our Clients | INFUZ - A Digital Agency</Title>
+        <Meta>Infuz Clients</Meta>
+        <PartialLocation>~/Views/Clients/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Clients/Index.jpg</Background>
+        <Thumbnail></Thumbnail>
+    </ContentPage>
+
+    <ContentPage key="/Expertise/">
+        <Title>Digital Marketing, Social, Content, Mobile, Search | INFUZ</Title>
+        <Meta>Infuz Expertise</Meta>
+        <PartialLocation>~/Views/Expertise/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Relationship-Architecture">
+        <Title>Digital Marketing Strategy - Purchase Decisions | INFUZ</Title>
+        <Meta>Relationship Architecture</Meta>
+        <PartialLocation>~/Views/Expertise/Relationship-Architecture.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/RA_overview.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/thumb/RA_overview.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Driving-Needs">
+        <Title>Digital Marketing Strategy - Consumer Behaviors | INFUZ</Title>
+        <Meta>Driving Needs</Meta>
+        <PartialLocation>~/Views/Expertise/Driving-Needs.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/driving_needs.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/thumb/driving_needs.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/The-Common-Connect">
+        <Title>Digital Marketing Strategy - Social Engagement | INFUZ</Title>
+        <Meta>The Common Connect</Meta>
+        <PartialLocation>~/Views/Expertise/The-Common-Connect.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/common_connect.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/thumb/common_connect.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/The-Brand-Catalyst">
+        <Title>Digital Marketing Strategy - Brand Interaction | INFUZ</Title>
+        <Meta>Brand Catalyst</Meta>
+        <PartialLocation>~/Views/Expertise/Brand-Catalyst.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/brand_catalyst.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/thumb/brand_catalyst.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/UX-Karma">
+        <Title>Digital Marketing Strategy - User Experience | INFUZ</Title>
+        <Meta>UX Karma</Meta>
+        <PartialLocation>~/Views/Expertise/UX-Karma.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/ux_karma.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/thumb/ux_karma.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Process/">
+        <Title>Digital Marketing Process | INFUZ - A Digital Agency</Title>
+        <Meta>Process</Meta>
+        <PartialLocation>~/Views/Expertise/Process/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Process/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/Process/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Process/Planning">
+        <Title>Digital &amp; Social Media Planning | INFUZ - A Digital Agency</Title>
+        <Meta>Planning</Meta>
+        <PartialLocation>~/Views/Expertise/Process/Planning.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Process/Planning.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/Process/thumb/Planning.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Process/Creation">
+        <Title>Digital &amp; Social Marketing Creation | INFUZ - A Digital Agency</Title>
+        <Meta>Creation</Meta>
+        <PartialLocation>~/Views/Expertise/Process/Creation.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Process/Creation.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/Process/thumb/Creation.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Process/Execution">
+        <Title>Digital &amp; Social Marketing Execution | INFUZ - A Digital Agency</Title>
+        <Meta>Execution</Meta>
+        <PartialLocation>~/Views/Expertise/Process/Execution.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Process/Execution.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/Process/thumb/Execution.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Process/Evaluation">
+        <Title>Digital &amp; Social Marketing Evaluation | INFUZ - A Digital Agency</Title>
+        <Meta>Evaluation</Meta>
+        <PartialLocation>~/Views/Expertise/Process/Evaluation.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Process/Evaluation.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/Process/thumb/Evaluation.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Services/">
+        <Title>Digital Marketing &amp; Social Media Services | INFUZ - A Digital Agency</Title>
+        <Meta>Other Services</Meta>
+        <PartialLocation>~/Views/Expertise/Services/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Services/index.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/Services/thumb/index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Expertise/Services/Other-Services">
+        <Title>Social Media Business Strategy | INFUZ - A Digital Agency</Title>
+        <Meta>Other Services</Meta>
+        <PartialLocation>~/Views/Expertise/Services/Other-Services.ascx</PartialLocation>
+        <Background>/Content/Images/Expertise/Services/Other-Services.jpg</Background>
+        <Thumbnail>/Content/Images/Expertise/Services/thumb/Other-Services.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Labs/">
+        <Title>Digital Marketing - Social Media Tools | INFUZ - A Digital Agency</Title>
+        <Meta>Labs</Meta>
+        <PartialLocation>~/Views/Labs/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Labs/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Labs/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Labs/STL-Tweets">
+        <Title>Digital Marketing - STL Tweets | INFUZ - A Digital Agency</Title>
+        <Meta>STL Tweets</Meta>
+        <PartialLocation>~/Views/Labs/STL-Tweets.ascx</PartialLocation>
+        <Background>/Content/Images/Labs/STL-Tweets.jpg</Background>
+        <Thumbnail>/Content/Images/Labs/thumb/STL-Tweets.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Labs/STL-Index">
+        <Title>Digital Marketing - STL Index | INFUZ - A Digital Agency</Title>
+        <Meta>STL Index</Meta>
+        <PartialLocation>~/Views/Labs/STL-Index.ascx</PartialLocation>
+        <Background>/Content/Images/Labs/STL-Index.jpg</Background>
+        <Thumbnail>/Content/Images/Labs/thumb/STL-Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Labs/State-Of-Twitter">
+        <Title>Digital Marketing - St. Louis &amp; Twitter | INFUZ - A Digital Agency</Title>
+        <Meta>State Of Twitter</Meta>
+        <PartialLocation>~/Views/Labs/State-Of-Twitter.ascx</PartialLocation>
+        <Background>/Content/Images/Labs/State-Of-Twitter.jpg</Background>
+        <Thumbnail>/Content/Images/Labs/thumb/State-Of-Twitter.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/index.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image1">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image1.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_6.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_6.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image2">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image2.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_1.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_1.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image3">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image3.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_2.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_2.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image4">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image4.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_3.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_3.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image5">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image5.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_4.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_4.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image6">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image6.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_5.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_5.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image7">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image7.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_7.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_7.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image8">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image8.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_8.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_8.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image9">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image9.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_9.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_9.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Image10">
+        <Title>Digital Strategy - Customer Engagement Solutions | INFUZ - A Digital Agency</Title>
+        <Meta>Agency</Meta>
+        <PartialLocation>~/Views/Agency/Image10.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/people_10.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/thumb/people_10.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Careers/">
+        <Title>Work With Us | INFUZ - A Digital Agency</Title>
+        <Meta>Careers</Meta>
+        <PartialLocation>~/Views/Agency/Careers/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/Careers/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/Careers/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Agency/Internships/">
+        <Title>Internships | INFUZ - A Digital Agency</Title>
+        <Meta>Internships</Meta>
+        <PartialLocation>~/Views/Agency/Internships/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Agency/Internships/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Agency/Internships/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+
+    <ContentPage key="/m/Contact/">
+        <Title>Contact Information | INFUZ - A Digital Agency</Title>
+        <Meta>Contact Us</Meta>
+        <PartialLocation>~/Views/Contact/Mobile_Base.ascx</PartialLocation>
+        <Background>/Content/Images/Contact/Index_m.jpg</Background>
+        <Thumbnail>/Content/Images/Contact/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Contact/">
+        <Title>Contact Information | INFUZ - A Digital Agency</Title>
+        <Meta>Contact Us</Meta>
+        <PartialLocation>~/Views/Contact/Base.ascx</PartialLocation>
+        <Background>/Content/Images/Contact/Index.jpg</Background>
+        <Thumbnail>/Content/Images/Contact/thumb/Index.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Contact/Map">
+        <Title>Digital Marketing - St. Louis, Missouri | INFUZ - A Digital Agency</Title>
+        <Meta>Map</Meta>
+        <PartialLocation>~/Views/Contact/Map.ascx</PartialLocation>
+        <Background></Background>
+        <Thumbnail>/Content/Images/Contact/thumb/Map.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Contact/Work-With-Us">
+        <Title>Social Media Marketing - Contact Us | INFUZ - A Digital Agency</Title>
+        <Meta>Work With Us</Meta>
+        <PartialLocation>~/Views/Contact/Work-With-Us.ascx</PartialLocation>
+        <Background>/Content/Images/Contact/Work-With-Us.jpg</Background>
+        <Thumbnail>/Content/Images/Contact/thumb/Work-With-Us.jpg</Thumbnail>
+    </ContentPage>
+    <ContentPage key="/Contact/Stalk-Us">
+        <Title>Facebook, Twitter, Google+, LinkedIn | INFUZ - A Digital Agency</Title>
+        <Meta>Stalk Us</Meta>
+        <PartialLocation>~/Views/Contact/Stalk-Us.ascx</PartialLocation>
+        <Background>/Content/Images/Contact/Stalk-Us.jpg</Background>
+        <Thumbnail>/Content/Images/Contact/thumb/Stalk-Us.jpg</Thumbnail>
+    </ContentPage>
+</ContentPages>

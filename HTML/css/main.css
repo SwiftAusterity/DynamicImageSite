@@ -1,0 +1,420 @@
+﻿/* Reset
+---------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* Base
+---------------------------------------------------------------------- */
+/* Clear fix */
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* IE6 */
+.group { height: 1%; }
+/* IE7 */
+.group { min-height: 1px; }
+
+/* Positions off-screen content for background content, etc. */
+.alt-content {
+    position: absolute; left: -9999em;
+}
+
+a {
+    color: #fe9705;
+    text-decoration: none;
+
+  -webkit-transition: all 0.3s ease-out;  
+     -moz-transition: all 0.3s ease-out;  
+      -ms-transition: all 0.3s ease-out;  
+       -o-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out;
+}
+a:hover {
+    color: #ed3024;
+}
+a:active {
+    color: #ed3024;
+}
+sup {
+    vertical-align: text-top;
+    font-size: .5em;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+p {
+    padding-bottom: .5em;
+}
+
+/* Page Style
+---------------------------------------------------------------------- */
+html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;
+}
+body {
+    color: #fff;
+    background: #444;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+#page {
+    position: absolute; min-width: 960px; width: 100%; height: 100%; left: 0; top: 0; overflow: hidden;
+}
+#header {
+    position: absolute; left: 0; right: 0; top: 0; z-index: 999;
+    border-top: 6px solid #000;
+}
+
+#ticker {
+    position: absolute; right: 12px; top: 9px; width: 255px; padding: 9px 12px;
+}
+
+.excerpt {
+    position: relative;
+    font-size: 11px; line-height: 1.2em;
+}
+.excerpt p {
+    padding-left: 30px;
+    font-size: 11px;
+}
+
+#footer {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 999; height: 24px;
+    border: 2px solid #000;
+    background: #000;
+}
+#footer-inner {
+    height: 24px;
+    padding: 0 30px;
+    position: relative;
+}
+#footer .icon-cornerfade-tl {
+    left: 0;
+    top: 0;
+}
+#footer .icon-cornerfade-br {
+    right: 0;
+    bottom: 0;
+}
+
+#footer .tray {
+    float: left;
+    width: 70%;
+}
+
+#footer .copyright {
+    float: right;
+    width: 29%;
+    font-size: 10px;
+    line-height: 20px;
+    color: #999;
+    text-align: right;
+}
+
+#stage {
+    position: absolute; width: 100%; height: 100%; left: 0; top: 0; overflow: hidden;
+}
+
+/* Navigation
+---------------------------------------------------------------------- */
+/* Primary */
+#primary-nav {
+    position: absolute; left: 25px; top: 0; width: 630px;
+}
+#primary-nav .logo {
+    border: 2px solid #000; border-top: none;
+    float: left; width: 112px; height: 47px;
+    background: #000;
+}
+#primary-nav .logo a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../img/infuz-logo-black.png") no-repeat;
+}
+#primary-nav .logo a .icon {
+    left: 0;
+    bottom: 0;
+}
+#primary-nav ul {
+    display: inline-block;
+    padding: 18px 0 0 18px;
+}
+* html #primary-nav ul {
+    display: inline;
+}
+*:first-child + html #primary-nav ul {
+    display: inline;
+}
+#primary-nav li {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+* html #primary-nav li {
+    display: inline;
+}
+*:first-child + html #primary-nav li {
+    display: inline;
+}
+#primary-nav li a {
+    display: inline-block;
+    padding: 4px 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+* html #primary-nav li a {
+    display: inline;
+}
+*:first-child + html #primary-nav li a {
+    display: inline;
+}
+#primary-nav li a:hover {
+    color: #ed3024;
+    background: #000;
+}
+
+/* Section */
+#section-nav {
+    position: absolute; left: 25px; bottom: 40px; min-width: 150px; z-index: 999;
+    font-size: 0;
+}
+#section-nav ul.filters {
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    vertical-align: bottom;
+    min-width: 150px;
+
+  -webkit-transition: all 0.3s ease-out;  
+     -moz-transition: all 0.3s ease-out;  
+      -ms-transition: all 0.3s ease-out;  
+       -o-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out;
+}
+#section-nav ul.filters li {
+    display: none;
+    list-style-type: none;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+}
+#section-nav ul.filters li.active {
+    display: block;
+    background: #000;
+    text-transform: uppercase;
+}
+#section-nav ul.filters li.active .icon {
+    right: 0;
+    top: -2px;
+}
+#section-nav ul.filters li.open {
+    margin: 2px 0;
+}
+#section-nav ul.filters li a {
+    display: block;
+    position: relative;
+    padding: 3px 5px;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#section-nav ul.filters li a:hover {
+    background: #333;
+    background: rgba(255, 255, 255, 0.4);
+}
+#section-nav ul.children {
+    display: inline-block;
+    position: relative;
+    z-index: 998;
+    font-size: 0;
+    line-height: 0;
+    padding: 0 1px;
+    vertical-align: bottom;
+}
+#section-nav ul.children li {
+    display: inline-block;
+    position: relative;
+    padding: 0 1px;
+}
+#section-nav ul.children li a {
+    display: inline-block;
+    background: #fff;
+    width: 34px;
+    height: 21px;
+    padding: 0;
+}
+#section-nav ul.children li a:hover {
+    background: #ed3024;
+}
+
+/* Paging */
+#paging-nav {
+    position: absolute; right: 25px; bottom: 40px; width: 60px; z-index: 999;
+    font-size: 0;
+}
+#paging-nav a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #000;
+    margin: 1px;
+}
+#paging-nav a:hover {
+    background: #ed3024;
+}
+
+/* Icons
+---------------------------------------------------------------------- */
+/* Insert into markup using: <span class="icon icon-sm icon-blog"></span> */
+/* Parent container must have "position: relative" */
+.icon {
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+}
+.icon-sm {
+    background-image: url("../img/icons-24.png");
+    width: 24px;
+    height: 24px;
+}
+.icon-sm.icon-news {
+    background-position: 0 0;
+}
+.icon-sm.icon-spotify {
+    background-position: 0 -24px;
+}
+.icon-sm.icon-twitter {
+    background-position: 0 -48px;
+}
+.icon-sm.icon-newsletter {
+    background-position: 0 -72px;
+}
+.icon-sm.icon-newsletter:hover {
+    background-position: 0 -96px;
+}
+.icon-sm.icon-arrow-up {
+    background-position: 0 -120px;
+}
+.icon-sm.icon-arrow-left {
+    background-position: 0 -144px;
+}
+.icon-sm.icon-arrow-right {
+    background-position: 0 -168px;
+}
+.icon-sm.icon-cornerfade-tl {
+    background-position: 0 -192px;
+}
+.icon-sm.icon-cornerfade-bl {
+    background-position: 0 -216px;
+}
+.icon-sm.icon-cornerfade-br {
+    background-position: 0 -240px;
+}
+
+/* Content Panes
+---------------------------------------------------------------------- */
+.pane {
+    position: absolute; width: 100%; height: 100%; left: 0; top: 0; overflow: hidden;
+    background: none no-repeat 50% 50%; background-size: cover;
+    display: none;
+    font-size: 100%;
+}
+.pane-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.pane .main {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    bottom: 100px;
+    width: 42%;
+    padding: 40px 50px;
+    font-size: 100%;
+}
+.pane .main section {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.pane .main header {
+    font-size: 90%;
+    font-weight: bold;
+}
+.pane .content {
+    font-size: 80%;
+}
+.pane .main footer {
+    font-size: 70%;
+    text-align: right;
+}
+
+/* Home */
+.pane.home {
+    background-image: url("../img/realbacon-profile.jpg");
+    /*background-image: url("../img/baconmockup-1000-750.jpg");*/
+}
+
+/* Approach */
+.pane.approach {
+    background-image: url("../img/baconmockup-1001-750.jpg");
+}
+
+/* Work */
+.pane.work {
+    background-image: url("../img/baconmockup-1002-750.jpg");
+}
+
+/* Labs */
+.pane.labs {
+    background-image: url("../img/baconmockup-1003-750.jpg");
+}
+
+/* People */
+.pane.people {
+    /*background-image: url("../img/baconmockup-1004-750.jpg");*/
+    background-image: url("../img/people/heath_harris.jpg");
+}
+
+/* Careers */
+.pane.careers {
+    background-image: url("../img/baconmockup-1005-750.jpg");
+}
+
+/* Contact */
+.pane.contact {
+    background-image: url("../img/baconmockup-1006-750.jpg");
+}
+
+/* Media Queries
+---------------------------------------------------------------------- */
+@media only screen and (min-width: 480px) {
+}
