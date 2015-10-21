@@ -83,9 +83,9 @@ namespace Site.Data.Live
 
             //url = http://www.facebook.com/{id.1}/posts/{id.2}
 
-            var urlIDKey = GetJsonProperty<String>(jT, "id", String.Empty);
-            var description = GetJsonProperty<String>(jT, "message", String.Empty);
-            var title = GetJsonProperty<String>(jT, "name", String.Empty);
+            var urlIDKey = GetJsonProperty<String>(jT, "id", string.Empty);
+            var description = GetJsonProperty<String>(jT, "message", string.Empty);
+            var title = GetJsonProperty<String>(jT, "name", string.Empty);
             var published = GetJsonProperty<DateTime>(jT, "created_time", DateTime.MinValue);
 
             urlIDKey = urlIDKey.Replace("_", "/posts/");

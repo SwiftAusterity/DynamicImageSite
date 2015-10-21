@@ -8,7 +8,7 @@ namespace Site.Data.API
     public interface IUser
     {
         Guid ID { get; set; }
-        String Name { get; set; }
-        String Permissions { get; set; }
+        string Name { get; set; }
+        string Permissions { get; set; }
     }
 }

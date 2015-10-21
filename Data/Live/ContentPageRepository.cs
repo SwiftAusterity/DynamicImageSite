@@ -114,10 +114,10 @@ namespace Site.Data.Live
             var sectionMeta = node.SelectSingleNode("Meta");
             var noSectionRootPage = node.GetAttribute<bool>("noRootPage", false);
             var sectionSlideshow = node.GetAttribute<bool>("slideshow", false);
-            var sectionRootPageTitle = node.GetAttribute<String>("rootPageName", String.Empty);
+            var sectionRootPageTitle = node.GetAttribute<String>("rootPageName", string.Empty);
             var sectionSiteMapPriority = node.GetAttribute<float>("siteMapPriority", 1);
-            var sectionUrl = node.GetAttribute<String>("baseUrl", String.Empty);
-            var sectionName = node.GetAttribute<String>("name", String.Empty);
+            var sectionUrl = node.GetAttribute<String>("baseUrl", string.Empty);
+            var sectionName = node.GetAttribute<String>("name", string.Empty);
             var sectionVisible = node.GetAttribute<bool>("visible", true);
 
             if (mobile)
@@ -127,7 +127,7 @@ namespace Site.Data.Live
 
             if (sectionVisible)
                 sectionNav = GetSectionNav(sectionUrl, subSections
-                                            , !String.IsNullOrEmpty(sectionRootPageTitle) ? sectionRootPageTitle : sectionName
+                                            , !string.IsNullOrEmpty(sectionRootPageTitle) ? sectionRootPageTitle : sectionName
                                             , noSectionRootPage, mobile);
 
             var section = new ContentSection
@@ -144,7 +144,7 @@ namespace Site.Data.Live
 
             if (sectionVisible)
                 fakeSubNav = GetSubNav(section.SectionUrl, sectionPages
-                            , !String.IsNullOrEmpty(sectionRootPageTitle) ? sectionRootPageTitle : section.SectionName
+                            , !string.IsNullOrEmpty(sectionRootPageTitle) ? sectionRootPageTitle : section.SectionName
                             , noSectionRootPage, mobile);
 
             //Need a "fake" subsection to pull in subsectionless pages
@@ -153,7 +153,7 @@ namespace Site.Data.Live
                 SubSectionSlideshow = sectionSlideshow,
                 SubSectionRootPageTitle = section.SectionRootPageTitle,
                 SubSectionMeta = section.SectionMeta,
-                SubSectionName = String.Empty,
+                SubSectionName = string.Empty,
                 SubSectionUrl = section.SectionUrl,
                 SubNav = fakeSubNav,
                 SectionSlideshow = section.SectionSlideshow,
@@ -212,7 +212,7 @@ namespace Site.Data.Live
                          newPage.BackwardNav = MakeNav(page.PreviousSibling, section.SectionUrl);
                     //This is a first page and we need to make a root nav
                     else if (!noSectionRootPage)
-                        newPage.BackwardNav = GetOneNav(section.SectionUrl, section.SectionUrl, String.Empty);
+                        newPage.BackwardNav = GetOneNav(section.SectionUrl, section.SectionUrl, string.Empty);
                     //revolving backwards nav. If there is a root page, it is the backwards nav otherwise we nab the last page in the list
                     else if (parentNode.ChildNodes.Count > 1 && parentNode.ChildNodes[parentNode.ChildNodes.Count - 1].Name.Equals("Page", StringComparison.InvariantCultureIgnoreCase))
                         newPage.BackwardNav = MakeNav(parentNode.ChildNodes[parentNode.ChildNodes.Count - 1], section.SectionUrl);
@@ -221,7 +221,7 @@ namespace Site.Data.Live
                         newPage.ForwardNav = MakeNav(page.NextSibling, section.SectionUrl);
                     //forward nav on the last page is the root page
                     else if (!noSectionRootPage)
-                        newPage.ForwardNav = GetOneNav(section.SectionUrl, section.SectionUrl, String.Empty);
+                        newPage.ForwardNav = GetOneNav(section.SectionUrl, section.SectionUrl, string.Empty);
                     //or it is the first page in the list
                     else if (newPage.Url.Equals(section.SectionUrl + parentNode.ChildNodes[parentNode.ChildNodes.Count - 1].InnerText, StringComparison.InvariantCultureIgnoreCase)
                         && parentNode.ChildNodes.Count > 1 && parentNode.FirstChild.Name.Equals("Page", StringComparison.InvariantCultureIgnoreCase))
@@ -250,32 +250,32 @@ namespace Site.Data.Live
                 return Enumerable.Empty<IContentPage>();
 
             var noSectionRootPage = node.GetAttribute<bool>("noRootPage", false);
-            var subSectionRootPageTitle = node.GetAttribute<String>("rootPageName", String.Empty);
+            var subSectionRootPageTitle = node.GetAttribute<String>("rootPageName", string.Empty);
             var subSectionSlideshow = node.GetAttribute<bool>("slideshow", false);
             var subPages = node.SelectNodes("Page");
             var subMeta = node.SelectSingleNode("Meta");
             var subSectionVisible = node.GetAttribute<bool>("visible", true);
             var subSectionSiteMapPriority = node.GetAttribute<float>("siteMapPriority", 1);
 
-            var subSectionUrl = String.Format("{0}{1}", section.SectionUrl, node.GetAttribute<String>("relativeUrl", String.Empty));
-            var subSectionName = node.GetAttribute<String>("name", String.Empty);
+            var subSectionUrl = string.Format("{0}{1}", section.SectionUrl, node.GetAttribute<String>("relativeUrl", string.Empty));
+            var subSectionName = node.GetAttribute<String>("name", string.Empty);
 
             var subNav = Enumerable.Empty<INavElement>();
 
             if (subSectionVisible)
                 subNav = GetSubNav(subSectionUrl, subPages
-                           , !String.IsNullOrEmpty(subSectionRootPageTitle) ? subSectionRootPageTitle : subSectionName
+                           , !string.IsNullOrEmpty(subSectionRootPageTitle) ? subSectionRootPageTitle : subSectionName
                            , noSectionRootPage, mobile);
 
             var subSection = new ContentSubSection
             {
                 SubSectionSlideshow = subSectionSlideshow,
                 SubSectionRootPageTitle = subSectionRootPageTitle,
-                SubSectionMeta = String.Format("{0} {1}", section.SectionMeta, subMeta.InnerText),
-                SubSectionName = node.GetAttribute<String>("name", String.Empty),
+                SubSectionMeta = string.Format("{0} {1}", section.SectionMeta, subMeta.InnerText),
+                SubSectionName = node.GetAttribute<String>("name", string.Empty),
                 SubSectionUrl = subSectionUrl,
                 SubNav = GetSubNav(subSectionUrl, subPages
-                           , !String.IsNullOrEmpty(subSectionRootPageTitle) ? subSectionRootPageTitle : subSectionName
+                           , !string.IsNullOrEmpty(subSectionRootPageTitle) ? subSectionRootPageTitle : subSectionName
                            , noSectionRootPage, mobile),
                 SectionSlideshow = section.SectionSlideshow,
                 SectionRootPageTitle = section.SectionRootPageTitle,
@@ -335,7 +335,7 @@ namespace Site.Data.Live
                          newPage.BackwardNav = MakeNav(page.PreviousSibling, subSectionUrl);
                     //This is a first page and we need to make a root nav
                     else if (!noSectionRootPage)
-                        newPage.BackwardNav = GetOneNav(subSection.SubSectionUrl, subSection.SubSectionUrl, String.Empty);
+                        newPage.BackwardNav = GetOneNav(subSection.SubSectionUrl, subSection.SubSectionUrl, string.Empty);
                     //revolving backwards nav. If there is a root page, it is the backwards nav otherwise we nab the last page in the list
                     else if (parentNode.ChildNodes.Count > 1 && parentNode.ChildNodes[parentNode.ChildNodes.Count - 1].Name.Equals("Page", StringComparison.InvariantCultureIgnoreCase))
                         newPage.BackwardNav = MakeNav(parentNode.ChildNodes[parentNode.ChildNodes.Count - 1], subSection.SubSectionUrl);
@@ -344,7 +344,7 @@ namespace Site.Data.Live
                           newPage.ForwardNav = MakeNav(page.NextSibling, subSectionUrl);
                     //forward nav on the last page is the root page
                     else if (!noSectionRootPage)
-                        newPage.ForwardNav = GetOneNav(subSection.SubSectionUrl, subSection.SubSectionUrl, String.Empty);
+                        newPage.ForwardNav = GetOneNav(subSection.SubSectionUrl, subSection.SubSectionUrl, string.Empty);
                     //or it is the first page in the list
                     else if (newPage.Url.Equals(subSection.SubSectionUrl + parentNode.ChildNodes[parentNode.ChildNodes.Count - 1].InnerText, StringComparison.InvariantCultureIgnoreCase)
                         && parentNode.ChildNodes.Count > 1 && parentNode.FirstChild.Name.Equals("Page", StringComparison.InvariantCultureIgnoreCase))
@@ -357,7 +357,7 @@ namespace Site.Data.Live
             return subPageList;
         }
 
-        internal IContentPage ReadPageFrom(String contentKey, String url, IContentSubSection section, float siteMapPriority, bool mobile, bool visible)
+        internal IContentPage ReadPageFrom(string contentKey, string url, IContentSubSection section, float siteMapPriority, bool mobile, bool visible)
         {
             var pageEntry = GetPageEntry(contentKey);
 
@@ -366,7 +366,7 @@ namespace Site.Data.Live
 
             var data = Kernel.Get<IContentPage>();
             data.Backgrounds = pageEntry.Backgrounds;
-            data.Meta = String.Format("{0} {1}", section.SubSectionMeta, pageEntry.Meta);
+            data.Meta = string.Format("{0} {1}", section.SubSectionMeta, pageEntry.Meta);
             data.PartialLocation = pageEntry.PartialLocation;
             data.SectionNav = section.SectionNav;
             data.SubNav = section.SubNav;
@@ -392,7 +392,7 @@ namespace Site.Data.Live
             return data;
         }
 
-        internal IEnumerable<INavElement> GetSubNav(String baseUrl, XmlNodeList nodes, String sectionName, bool noRootPage, bool mobile)
+        internal IEnumerable<INavElement> GetSubNav(string baseUrl, XmlNodeList nodes, string sectionName, bool noRootPage, bool mobile)
         {
             var returnList = new List<INavElement>();
 
@@ -414,9 +414,9 @@ namespace Site.Data.Live
                     continue;
 
                 var pageUrl = baseUrl + node.InnerText;
-                var navName = node.GetAttribute<String>("name", String.Empty);
+                var navName = node.GetAttribute<String>("name", string.Empty);
 
-                if (String.IsNullOrEmpty(pageUrl))
+                if (string.IsNullOrEmpty(pageUrl))
                     continue;
 
                 //override the inhereted cascading url key structure if we need to
@@ -432,7 +432,7 @@ namespace Site.Data.Live
             return returnList;
         }
 
-        internal IEnumerable<INavElement> GetSectionNav(String baseUrl, XmlNodeList nodes, String sectionName, bool noRootPage, bool mobile)
+        internal IEnumerable<INavElement> GetSectionNav(string baseUrl, XmlNodeList nodes, string sectionName, bool noRootPage, bool mobile)
         {
             var returnList = new List<INavElement>();
 
@@ -453,10 +453,10 @@ namespace Site.Data.Live
                 if (!visible)
                     continue;
 
-                var pageUrl = baseUrl + node.GetAttribute<String>("relativeUrl", String.Empty);
-                var navName = node.GetAttribute<String>("name", String.Empty);
+                var pageUrl = baseUrl + node.GetAttribute<String>("relativeUrl", string.Empty);
+                var navName = node.GetAttribute<String>("name", string.Empty);
 
-                if (String.IsNullOrEmpty(pageUrl))
+                if (string.IsNullOrEmpty(pageUrl))
                     continue;
 
                 //override the inhereted cascading url key structure if we need to
@@ -472,7 +472,7 @@ namespace Site.Data.Live
             return returnList;
         }
 
-        internal INavElement GetOneNav(String pathKey, String url, String nameOverride)
+        internal INavElement GetOneNav(string pathKey, string url, string nameOverride)
         {
             var pageEntry = GetPageEntry(pathKey);
 
@@ -480,19 +480,19 @@ namespace Site.Data.Live
                 return null;
 
             var navElement = Kernel.Get<NavElement>();
-            navElement.Name = String.IsNullOrEmpty(nameOverride) ? pageEntry.Title : nameOverride;
+            navElement.Name = string.IsNullOrEmpty(nameOverride) ? pageEntry.Title : nameOverride;
             navElement.Url = url.EndsWith("/") ? url : url + "/";
             navElement.Thumbnail = pageEntry.ThumbnailUrl;
 
             return navElement;
         }
 
-        internal IContentEntry GetPageEntry(String pathKey)
+        internal IContentEntry GetPageEntry(string pathKey)
         {
             return ContentEntryRepository.Get(pathKey);
         }
 
-        internal INavElement MakeNav(XmlNode targetPage, String parentUrl)
+        internal INavElement MakeNav(XmlNode targetPage, string parentUrl)
         {
             var newPage = targetPage;
             var contentSwitch = newPage.GetAttribute<bool>("explicitContent", false);
@@ -502,7 +502,7 @@ namespace Site.Data.Live
             if (contentSwitch)
                 pageKey = newPage.InnerText;
 
-            return GetOneNav(pageKey, url, String.Empty);
+            return GetOneNav(pageKey, url, string.Empty);
         }
     }
 }

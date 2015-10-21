@@ -7,11 +7,11 @@ namespace Site.Data.API.Repository
 {
     public interface INewsFeedRepository
     {
-        IEnumerable<INewsFeedItem> GetLatestFeed(String endpoint);
+        IEnumerable<INewsFeedItem> GetLatestFeed(string endpoint);
     }
 
     public interface INewsFeedRepositoryBackingStore : INewsFeedRepository
     {
-        IEnumerable<INewsFeedItem> GetLatestFeed(String endpoint, bool initial);
+        IEnumerable<INewsFeedItem> GetLatestFeed(string endpoint, bool initial);
     }
 }

@@ -7,7 +7,7 @@ namespace Site.Data.API.CacheKey
         public string URL { get; set; }
         public bool Mobile { get; set; }
 
-        public ContentPageKey(String url, bool mobile)
+        public ContentPageKey(string url, bool mobile)
             : base("ContentPage")
         {
             URL = url;
@@ -102,7 +102,7 @@ namespace Site.Data.API.CacheKey
     {
         public string StringKey { get; set; }
 
-        public ContentEntryKey(String key)
+        public ContentEntryKey(string key)
             : base("ContentEntry")
         {
             StringKey = key;

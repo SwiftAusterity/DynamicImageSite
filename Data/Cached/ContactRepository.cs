@@ -53,7 +53,7 @@ namespace Site.Data.Cached
             return Cache.Enroll(cacheKey, (bool initialLoad) => BackingStore.Get(initialLoad));
         }
 
-        public IEnumerable<IContact> Get(String emailAddress)
+        public IEnumerable<IContact> Get(string emailAddress)
         {
             var cacheKey = new ContactByEmailKey(emailAddress);
             var keyString = cacheKey.Key;

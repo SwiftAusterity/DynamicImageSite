@@ -7,16 +7,16 @@ namespace Site.Data.API
 {
     public interface ISocialMediaItem
     {
-        String Body { get; set; }
+        string Body { get; set; }
         SocialMediaTypeClass TypeClass { get; set; }
 
-        String AsHtml(bool hidden);
+        string AsHtml(bool hidden);
     }
 
     public interface ISocialMediaFeed
     {
-        String ProfileTarget { get; set; }
-        String AuthKey { get; set; }
+        string ProfileTarget { get; set; }
+        string AuthKey { get; set; }
         SocialMediaTypeClass TypeClass { get; set; }
 
         IEnumerable<ISocialMediaItem> GetData();

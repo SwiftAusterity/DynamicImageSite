@@ -25,7 +25,7 @@ namespace Site.Data.DTO
         {
             var smitem = Kernel.Get<SocialMediaItem>();
 
-            smitem.Body = String.Format("<a href=\"{0}\" rel=\"nofollow\" target=\"_blank\">{1}</a>", Url, Title);
+            smitem.Body = string.Format("<a href=\"{0}\" rel=\"nofollow\" target=\"_blank\">{1}</a>", Url, Title);
             smitem.TypeClass = SocialMediaTypeClass.news;
 
             return smitem;

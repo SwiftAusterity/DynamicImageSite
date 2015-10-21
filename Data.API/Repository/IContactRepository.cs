@@ -7,11 +7,11 @@ namespace Site.Data.API.Repository
 {
     public interface IContactRepository
     {
-        bool Save(String email, String body, String name, bool subscribed);
+        bool Save(string email, string body, string name, bool subscribed);
         bool Delete(IContact contact);
 
         IEnumerable<IContact> Get();
-        IEnumerable<IContact> Get(String emailAddress);
+        IEnumerable<IContact> Get(string emailAddress);
     }
 
     public interface IContactRepositoryBackingStore : IContactRepository

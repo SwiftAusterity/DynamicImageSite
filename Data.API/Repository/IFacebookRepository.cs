@@ -7,11 +7,11 @@ namespace Site.Data.API.Repository
 {
     public interface IFacebookRepository
     {
-        IEnumerable<IFacebookPost> GetLatestFeed(String endpoint, string accessToken);
+        IEnumerable<IFacebookPost> GetLatestFeed(string endpoint, string accessToken);
     }
 
     public interface IFacebookRepositoryBackingStore : IFacebookRepository
     {
-        IEnumerable<IFacebookPost> GetLatestFeed(String endpoint, string accessToken, bool initial);
+        IEnumerable<IFacebookPost> GetLatestFeed(string endpoint, string accessToken, bool initial);
     }
 }

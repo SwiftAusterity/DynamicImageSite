@@ -26,7 +26,7 @@ namespace Site.Data.Live
 
         public bool Save(string source, string url)
         {
-            string sql = String.Format("INSERT INTO dbo.[User]({0}) "
+            string sql = string.Format("INSERT INTO dbo.[User]({0}) "
                                     + " VALUES(@source, @url)", UserInsertColumns);
 
             var id = UntilDovesCryScalar(sql
@@ -37,7 +37,7 @@ namespace Site.Data.Live
 
         public bool Delete(IUser user)
         {
-            string sql = String.Format("DELETE FROM dbo.[User] WHERE [ID] = @ID");
+            string sql = string.Format("DELETE FROM dbo.[User] WHERE [ID] = @ID");
 
             var id =  UntilDovesCryScalar(sql
                                         , Utility.Parameter("@ID", user.ID));
@@ -46,7 +46,7 @@ namespace Site.Data.Live
 
         public IEnumerable<IUser> Get(bool first)
         {
-            var sql = String.Format("SELECT {0} FROM dbo.[User] AS {1}"
+            var sql = string.Format("SELECT {0} FROM dbo.[User] AS {1}"
                                             , UserSelectColumns, UserAlias);
 
             return UntilDovesCry<IUser>(sql
@@ -76,8 +76,8 @@ namespace Site.Data.Live
         internal IUser ReadFrom(IDataReader reader, ref int columnIndex)
         {
             var id = reader.ColumnValue(columnIndex++, Guid.Empty);
-            var name = reader.ColumnValue(columnIndex++, String.Empty);
-            var permissions = reader.ColumnValue(columnIndex++, String.Empty);
+            var name = reader.ColumnValue(columnIndex++, string.Empty);
+            var permissions = reader.ColumnValue(columnIndex++, string.Empty);
 
             return Instantiate(id, name, permissions);
         }
@@ -85,13 +85,13 @@ namespace Site.Data.Live
         internal IUser ToSingle(DataRow currentRow)
         {
             var id = currentRow["id"].ColumnValue<Guid>(Guid.Empty);
-            var name = currentRow["name"].ColumnValue<string>(String.Empty);
-            var permissions = currentRow["permissions"].ColumnValue<string>(String.Empty);
+            var name = currentRow["name"].ColumnValue<string>(string.Empty);
+            var permissions = currentRow["permissions"].ColumnValue<string>(string.Empty);
 
             return Instantiate(id, name, permissions);
         }
 
-        internal IUser Instantiate(Guid id, String name, String permissions)
+        internal IUser Instantiate(Guid id, string name, string permissions)
         {
             var data = Kernel.Get<IUser>();
 

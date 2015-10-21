@@ -10,7 +10,7 @@ namespace Site.Data.API
     {
         string Name { get; set; }
         string ArtistName { get; set; }
-        String Url { get; set; }
+        string Url { get; set; }
         int PlayCount { get; set; }
 
         ISocialMediaItem AsSocialMediaItem();

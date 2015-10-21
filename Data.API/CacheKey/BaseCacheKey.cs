@@ -25,7 +25,7 @@ namespace Site.Data.API.CacheKey
         {
             get
             {
-                return String.IsNullOrEmpty(SubKey)
+                return string.IsNullOrEmpty(SubKey)
                             ?  Prefix 
                             : Prefix + "." + SubKey;
             }
@@ -35,7 +35,7 @@ namespace Site.Data.API.CacheKey
         {
             get
             {
-                return (String.IsNullOrEmpty(SubKey)
+                return (string.IsNullOrEmpty(SubKey)
                             ? Prefix 
                             : Prefix + "/" + SubKey) + "/";
             }

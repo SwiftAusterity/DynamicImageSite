@@ -13,7 +13,7 @@ namespace Site.Data.Ajax
     public class AjaxRepository
     {
         //I dont want to explode on individual values
-        internal static T GetJsonProperty<T>(JToken thing, String name, T defaultValue)
+        internal static T GetJsonProperty<T>(JToken thing, string name, T defaultValue)
         {
             if (thing != null)
             {
@@ -33,12 +33,12 @@ namespace Site.Data.Ajax
 
         public IList<TElement> UntilDovesCry<TElement>(bool initialLoad
             , Uri targetUri
-            , String rootNodeName
-            , String elementName
+            , string rootNodeName
+            , string elementName
             , Action<JToken, IList<TElement>> appendAction)
         {
             var maxChances = initialLoad ? 10 : 3;
-            var jsonString = String.Empty;
+            var jsonString = string.Empty;
 
             for (var chance = 0; chance < maxChances; chance++)
             {
@@ -100,12 +100,12 @@ namespace Site.Data.Ajax
 
         public IList<TElement> UntilDovesCry<TElement>(bool initialLoad
             , Uri targetUri
-            , String rootNode
-            , String nodeName
+            , string rootNode
+            , string nodeName
             , Action<XmlNode, IList<TElement>> appendAction)
         {
             var maxChances = initialLoad ? 10 : 3;
-            var xmlString = String.Empty;
+            var xmlString = string.Empty;
 
             for (var chance = 0; chance < maxChances; chance++)
             {

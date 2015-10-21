@@ -7,9 +7,9 @@ namespace Site.Data.File
 {
     public abstract class FileRepository
     {
-        public IList<TElement> UntilDovesCry<TElement>(String fileLocation
-            , String rootNode
-            , String nodeName
+        public IList<TElement> UntilDovesCry<TElement>(string fileLocation
+            , string rootNode
+            , string nodeName
             , Action<XmlNode, IList<TElement>> appendAction)
         {
             var resolvedPath = HostingEnvironment.MapPath(fileLocation);

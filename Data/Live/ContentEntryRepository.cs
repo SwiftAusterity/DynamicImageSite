@@ -87,7 +87,7 @@ namespace Site.Data.Live
 
             var infoTextNode = node.SelectSingleNode("InfoText");
 
-            var infoText = String.Empty;
+            var infoText = string.Empty;
             if (infoTextNode != null)
                 infoText = infoTextNode.InnerText;
 
@@ -95,7 +95,7 @@ namespace Site.Data.Live
             var thumbnailUrl = node.SelectSingleNode("Thumbnail").InnerText;
 
             var title = node.SelectSingleNode("Title").InnerText;
-            var key = node.GetAttribute<String>("key", String.Empty);
+            var key = node.GetAttribute<String>("key", string.Empty);
 
             var socialMediaNodes = node.SelectNodes("SocialFeed");
 
@@ -114,9 +114,9 @@ namespace Site.Data.Live
             return data;
         }
 
-        internal IEnumerable<String> GetBackgrounds(XmlNodeList nodes)
+        internal IEnumerable<string> GetBackgrounds(XmlNodeList nodes)
         {
-            var returnList = new List<String>();
+            var returnList = new List<string>();
 
             foreach (XmlNode node in nodes)
                 returnList.Add(node.InnerText);
@@ -133,12 +133,12 @@ namespace Site.Data.Live
             {
                 foreach (XmlNode node in nodes)
                 {
-                    if (String.IsNullOrEmpty(node.InnerText))
+                    if (string.IsNullOrEmpty(node.InnerText))
                         continue;
 
                     var newFeed = Kernel.Get<SocialMediaFeed>();
                     newFeed.ProfileTarget = node.InnerText;
-                    newFeed.AuthKey = node.GetAttribute<String>("authKey", String.Empty);
+                    newFeed.AuthKey = node.GetAttribute<String>("authKey", string.Empty);
                     newFeed.TypeClass = node.GetAttribute<SocialMediaTypeClass>("source", SocialMediaTypeClass.news);
                     returnList.AddRange(newFeed.GetData());
                 }

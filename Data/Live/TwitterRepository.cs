@@ -87,7 +87,7 @@ namespace Site.Data.Live
         internal ITweet ReadFromAtomEntry(AtomEntry entry)
         {
             //dumb hack to stop @ messages from showing up.
-            if (entry == null || String.IsNullOrEmpty(entry.Content) || entry.Content.StartsWith("@"))
+            if (entry == null || string.IsNullOrEmpty(entry.Content) || entry.Content.StartsWith("@"))
                 return null;
 
             var url = entry.Alternate;

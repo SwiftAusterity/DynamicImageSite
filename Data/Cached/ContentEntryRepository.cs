@@ -52,7 +52,7 @@ namespace Site.Data.Cached
             return Cache.Enroll(cacheKey, (bool initialLoad) => BackingStore.Get(initialLoad));
         }
 
-        public IContentEntry Get(String key)
+        public IContentEntry Get(string key)
         {
             return BackingStore.Get(key);
         }

@@ -24,7 +24,7 @@ namespace Site.Data.Cached
 
         #region IContactRepository Members
 
-        public bool Save(String command, String path, bool handled)
+        public bool Save(string command, string path, bool handled)
         {
             return BackingStore.Save(command, path, handled);
         }

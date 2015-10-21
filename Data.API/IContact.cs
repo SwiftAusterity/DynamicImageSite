@@ -7,9 +7,9 @@ namespace Site.Data.API
 {
     public interface IContact
     {
-        String Email { get; set; }
-        String Body { get; set; }
-        String Name { get; set; }
+        string Email { get; set; }
+        string Body { get; set; }
+        string Name { get; set; }
         bool Subscribed { get; set; }
         DateTime Created { get; set; }
     }

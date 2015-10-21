@@ -7,8 +7,8 @@ namespace Site.Data.API
 {
     public interface ITextCommand
     {
-        String Command { get; set; }
-        String Path { get; set; }
+        string Command { get; set; }
+        string Path { get; set; }
         bool Handled { get; set; }
         DateTime Created { get; set; }
     }

@@ -28,7 +28,7 @@ namespace Site.Data.Live
 
         public IEnumerable<IContact> Get(bool first)
         {
-            var sql = String.Format("SELECT {0} FROM dbo.[Contact] AS {1}"
+            var sql = string.Format("SELECT {0} FROM dbo.[Contact] AS {1}"
                                             , ContactSelectColumns, ContactAlias);
 
             return UntilDovesCry<IContact>(sql
@@ -44,7 +44,7 @@ namespace Site.Data.Live
 
         public bool Save(string email, string body, string name, bool subscribed)
         {
-            string sql = String.Format("INSERT INTO dbo.[Contact]({0}) "
+            string sql = string.Format("INSERT INTO dbo.[Contact]({0}) "
                                     + " VALUES(@email, @body, @name, @subscribed)"
                                     , ContactInsertColumns);
 
@@ -58,7 +58,7 @@ namespace Site.Data.Live
 
         public bool Delete(IContact contact)
         {
-            string sql = String.Format("DELETE FROM dbo.[Contact] WHERE [Email] = @Email AND [Created] = @Created");
+            string sql = string.Format("DELETE FROM dbo.[Contact] WHERE [Email] = @Email AND [Created] = @Created");
 
             var id = UntilDovesCryScalar(sql
                                         , Utility.Parameter("@Email", contact.Email, true, 255)
@@ -71,7 +71,7 @@ namespace Site.Data.Live
             return Get(true);
         }
 
-        public IEnumerable<IContact> Get(String emailAddress)
+        public IEnumerable<IContact> Get(string emailAddress)
         {
             var list = Me.Get();
             return list.Where(contact => contact.Email.Equals(emailAddress, StringComparison.InvariantCultureIgnoreCase));
@@ -88,16 +88,16 @@ namespace Site.Data.Live
 
         internal IContact ReadFrom(IDataReader reader, ref int columnIndex)
         {
-            var email = reader.ColumnValue(columnIndex++, String.Empty);
-            var body = reader.ColumnValue(columnIndex++, String.Empty);
-            var name = reader.ColumnValue(columnIndex++, String.Empty);
+            var email = reader.ColumnValue(columnIndex++, string.Empty);
+            var body = reader.ColumnValue(columnIndex++, string.Empty);
+            var name = reader.ColumnValue(columnIndex++, string.Empty);
             var subscribed = reader.ColumnValue(columnIndex++, false);
             var created = reader.ColumnValue(columnIndex++, DateTime.MinValue);
 
             return Instantiate(email, body, name, subscribed, created);
         }
 
-        internal IContact Instantiate(String email, String body, String name, bool subscribed, DateTime created)
+        internal IContact Instantiate(string email, string body, string name, bool subscribed, DateTime created)
         {
             var data = Kernel.Get<IContact>();
 

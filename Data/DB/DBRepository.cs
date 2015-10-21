@@ -16,13 +16,13 @@ namespace Site.Data.DB
         [Inject]
         public ISqlServiceProvider SqlProvider { get; set; }
 
-        public const String UserAlias = "usr";
-        public const String UserSelectColumns = " usr.[ID], usr.[Name], usr.[Permissions] ";
-        public const String UserInsertColumns = " [ID], [Name], [Permissions] ";
+        public const string UserAlias = "usr";
+        public const string UserSelectColumns = " usr.[ID], usr.[Name], usr.[Permissions] ";
+        public const string UserInsertColumns = " [ID], [Name], [Permissions] ";
 
-        public const String ContactAlias = "con";
-        public const String ContactSelectColumns = " con.[Email], con.[Body], con.[Name], con.[Subscribed], con.[Created]";
-        public const String ContactInsertColumns = " [Email], [Body], [Name], [Subscribed] ";
+        public const string ContactAlias = "con";
+        public const string ContactSelectColumns = " con.[Email], con.[Body], con.[Name], con.[Subscribed], con.[Created]";
+        public const string ContactInsertColumns = " [Email], [Body], [Name], [Subscribed] ";
         
         public IList<TElement> UntilDovesCry<TElement>(string sql
             , bool initialLoad
@@ -57,7 +57,7 @@ namespace Site.Data.DB
 
         public long UntilDovesCry(string sql, SqlParameter[] parameters)
         {
-            string lastException = String.Empty;
+            string lastException = string.Empty;
             var maxChances = 3;
 
             for (var chance = 0; chance < maxChances; chance++)
@@ -89,7 +89,7 @@ namespace Site.Data.DB
 
         public T UntilDovesCryScalar<T>(string sql, params SqlParameter[] parameters)
         {
-            string lastException = String.Empty;
+            string lastException = string.Empty;
             var maxChances = 3;
 
             for (var chance = 0; chance < maxChances; chance++)

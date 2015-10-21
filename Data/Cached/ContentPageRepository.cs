@@ -58,7 +58,7 @@ namespace Site.Data.Cached
             return Cache.Enroll(cacheKey, (bool initialLoad) => BackingStore.Get(mobile, initialLoad));
         }
 
-        public IContentPage Get(String url, bool mobile)
+        public IContentPage Get(string url, bool mobile)
         {
             return BackingStore.Get(url, mobile);
         }

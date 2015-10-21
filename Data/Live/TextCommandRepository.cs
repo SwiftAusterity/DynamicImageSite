@@ -26,7 +26,7 @@ namespace Site.Data.Live
 
         #region ItextcommandRepository Members
 
-        public bool Save(String command, String path, bool handled)
+        public bool Save(string command, string path, bool handled)
         {
             string sql = "INSERT INTO dbo.[TextCommandHistory]([Command], [Path], [Handled]) VALUES(@command, @path, @handled)";
 

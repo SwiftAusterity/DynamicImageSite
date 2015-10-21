@@ -6,7 +6,7 @@ namespace Site.Data.API.CacheKey
     {
         public string Username { get; set; }
 
-        public TweetCacheKey(String userName)
+        public TweetCacheKey(string userName)
             : base("TweetCache")
         {
             Username = userName;

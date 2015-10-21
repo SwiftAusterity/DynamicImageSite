@@ -6,12 +6,12 @@ namespace Site.Data.API
     {
         string SourceTitle { get; set; }
         string SourceUrl { get; set; }
-        String SourceDescription { get; set; }
+        string SourceDescription { get; set; }
 
-        String UID { get; set; }
-        String Title { get; set; }
-        String Url { get; set; }
-        String Description { get; set; }
+        string UID { get; set; }
+        string Title { get; set; }
+        string Url { get; set; }
+        string Description { get; set; }
         DateTime Published { get; set; }
 
         ISocialMediaItem AsSocialMediaItem();

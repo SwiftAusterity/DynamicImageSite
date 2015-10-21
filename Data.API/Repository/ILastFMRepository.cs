@@ -5,13 +5,13 @@ namespace Site.Data.API.Repository
 {
     public interface ILastFMRepository
     {
-        IEnumerable<ILastFMTrack> GetLatestTracks(String username);
-        IEnumerable<ILastFMAlbum> GetLatestAlbums(String groupName);
+        IEnumerable<ILastFMTrack> GetLatestTracks(string username);
+        IEnumerable<ILastFMAlbum> GetLatestAlbums(string groupName);
     }
 
     public interface ILastFMRepositoryBackingStore : ILastFMRepository
     {
-        IEnumerable<ILastFMTrack> GetLatestTracks(String username, bool initial);
-        IEnumerable<ILastFMAlbum> GetLatestAlbums(String groupName, bool initial);
+        IEnumerable<ILastFMTrack> GetLatestTracks(string username, bool initial);
+        IEnumerable<ILastFMAlbum> GetLatestAlbums(string groupName, bool initial);
     }
 }

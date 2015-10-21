@@ -6,7 +6,7 @@ namespace Site.Data.API.CacheKey
     {
         public string Endpoint { get; set; }
 
-        public NewsFeedItemCacheKey(String endpoint)
+        public NewsFeedItemCacheKey(string endpoint)
             : base("NewsFeedItemCache")
         {
             Endpoint = endpoint;

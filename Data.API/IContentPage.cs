@@ -38,7 +38,7 @@ namespace Site.Data.API
         string InfoText { get; set; }
         float SiteMapPriority { get; set; }
 
-        IEnumerable<String> Backgrounds { get; set; }
+        IEnumerable<string> Backgrounds { get; set; }
         IEnumerable<INavElement> PrimaryNav { get; set; }
         INavElement ForwardNav { get; set; }
         INavElement BackwardNav { get; set; }
@@ -54,6 +54,6 @@ namespace Site.Data.API
         string ThumbnailUrl { get; set; }
         string InfoText { get; set; }
         IEnumerable<ISocialMediaItem> SocialMediaFeedItems { get; set; }
-        IEnumerable<String> Backgrounds { get; set; }
+        IEnumerable<string> Backgrounds { get; set; }
     }
 }

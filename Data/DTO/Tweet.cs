@@ -25,7 +25,7 @@ namespace Site.Data.DTO
         {
             var smitem = Kernel.Get<SocialMediaItem>();
 
-            smitem.Body = Body.Replace("<em>", String.Empty).Replace("</em>", String.Empty);
+            smitem.Body = Body.Replace("<em>", string.Empty).Replace("</em>", string.Empty);
             smitem.TypeClass = SocialMediaTypeClass.twitter;
 
             return smitem;

@@ -50,15 +50,15 @@ namespace Site.Data.DTO
         [Inject]
         public INewsFeedRepository NewsRepository { get; set; }
 
-        public String ProfileTarget { get; set; }
-        public String AuthKey { get; set; }
+        public string ProfileTarget { get; set; }
+        public string AuthKey { get; set; }
         public SocialMediaTypeClass TypeClass { get; set; }
 
         public IEnumerable<ISocialMediaItem> GetData()
         {
             var mediaItems = new List<ISocialMediaItem>();
 
-            if (!String.IsNullOrEmpty(ProfileTarget))
+            if (!string.IsNullOrEmpty(ProfileTarget))
                 switch (TypeClass)
                 {
                     case SocialMediaTypeClass.lastfmalbum:

@@ -21,7 +21,7 @@ namespace Site.Data.DTO
         {
             var smitem = Kernel.Get<SocialMediaItem>();
 
-            smitem.Body = String.Format("<a href=\"{0}\" rel=\"nofollow\" target=\"_blank\">{1} by {2}</a>", Url, Name, ArtistName);
+            smitem.Body = string.Format("<a href=\"{0}\" rel=\"nofollow\" target=\"_blank\">{1} by {2}</a>", Url, Name, ArtistName);
             smitem.TypeClass = SocialMediaTypeClass.lastfmalbum;
 
             return smitem;

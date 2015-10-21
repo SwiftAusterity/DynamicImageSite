@@ -39,7 +39,7 @@ namespace Site.Data.Live
 
         public IEnumerable<ILastFMTrack> GetLatestTracks(string username, bool initial)
         {
-            var targetUrl = new Uri(String.Format("{0}?method=user.getrecenttracks&user={1}&api_key={2}&format=json"
+            var targetUrl = new Uri(string.Format("{0}?method=user.getrecenttracks&user={1}&api_key={2}&format=json"
                         , UrlBase
                         , username
                         , APIKey));
@@ -55,7 +55,7 @@ namespace Site.Data.Live
 
         public IEnumerable<ILastFMAlbum> GetLatestAlbums(string groupName, bool initial)
         {
-            var targetUrl = new Uri(String.Format("{0}?method=group.getweeklyalbumchart&group={1}&api_key={2}&format=json"
+            var targetUrl = new Uri(string.Format("{0}?method=group.getweeklyalbumchart&group={1}&api_key={2}&format=json"
                         , UrlBase
                         , groupName
                         , APIKey));
@@ -123,9 +123,9 @@ namespace Site.Data.Live
 
             var artistNode = jT["artist"];
 
-            var artistName = GetJsonProperty<String>(artistNode, "#text", String.Empty);
-            var name = GetJsonProperty<String>(jT, "name", String.Empty);
-            var url = GetJsonProperty<String>(jT, "url", String.Empty);
+            var artistName = GetJsonProperty<String>(artistNode, "#text", string.Empty);
+            var name = GetJsonProperty<String>(jT, "name", string.Empty);
+            var url = GetJsonProperty<String>(jT, "url", string.Empty);
             var playCount = GetJsonProperty<int>(jT, "playcount", default(int));
 
             var item = Kernel.Get<LastFMAlbum>();
@@ -156,14 +156,14 @@ namespace Site.Data.Live
             jT = jT.First();
 
             var artistNode = jT["artist"];
-            var artistName = GetJsonProperty<String>(artistNode, "#text", String.Empty);
+            var artistName = GetJsonProperty<String>(artistNode, "#text", string.Empty);
 
             var albumNode = jT["album"];
-            var albumName = GetJsonProperty<String>(albumNode, "#text", String.Empty);
+            var albumName = GetJsonProperty<String>(albumNode, "#text", string.Empty);
 
-            var name = GetJsonProperty<String>(jT, "name", String.Empty);
+            var name = GetJsonProperty<String>(jT, "name", string.Empty);
             var nowPlaying = GetJsonProperty<bool>(jT, "nowplaying", false);
-            var url = GetJsonProperty<String>(jT, "url", String.Empty);
+            var url = GetJsonProperty<String>(jT, "url", string.Empty);
             var dateNode = jT["date"];
             var date = GetJsonProperty<DateTime>(dateNode, "#text", DateTime.MaxValue);
             var streamable = GetJsonProperty<int>(jT, "streamable", default(int));

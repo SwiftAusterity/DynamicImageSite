@@ -7,7 +7,7 @@ namespace Site.Data.API.Repository
 {
     public interface ITextCommandRepository
     {
-        bool Save(String command, String path, bool handled);
+        bool Save(string command, string path, bool handled);
     }
 
     public interface ITextCommandRepositoryBackingStore : ITextCommandRepository

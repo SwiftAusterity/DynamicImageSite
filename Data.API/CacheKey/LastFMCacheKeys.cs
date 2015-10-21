@@ -6,7 +6,7 @@ namespace Site.Data.API.CacheKey
     {
         public string Username { get; set; }
 
-        public LatestTrackKey(String userName)
+        public LatestTrackKey(string userName)
             : base("LatestTrackKey")
         {
             Username = userName;
@@ -53,7 +53,7 @@ namespace Site.Data.API.CacheKey
     {
         public string Groupname { get; set; }
 
-        public LatestAlbumsKey(String groupName)
+        public LatestAlbumsKey(string groupName)
             : base("LatestAlbums")
         {
             Groupname = groupName;

@@ -49,7 +49,7 @@ namespace Site.Data.DTO
         public string InfoText { get; set; }
         public float SiteMapPriority { get; set; }
 
-        public IEnumerable<String> Backgrounds { get; set; }
+        public IEnumerable<string> Backgrounds { get; set; }
         public INavElement ForwardNav { get; set; }
         public INavElement BackwardNav { get; set; }
         public IEnumerable<INavElement> PrimaryNav { get; set; }

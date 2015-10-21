@@ -7,11 +7,11 @@ namespace Site.Data.API.Repository
 {
     public interface ITwitterRepository
     {
-        IEnumerable<ITweet> GetLatestTweet(String username);
+        IEnumerable<ITweet> GetLatestTweet(string username);
     }
 
     public interface ITwitterRepositoryBackingStore : ITwitterRepository
     {
-        IEnumerable<ITweet> GetLatestTweet(String username, bool initial);
+        IEnumerable<ITweet> GetLatestTweet(string username, bool initial);
     }
 }

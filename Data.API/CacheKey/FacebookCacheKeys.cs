@@ -6,7 +6,7 @@ namespace Site.Data.API.CacheKey
     {
         public string Source { get; set; }
 
-        public FacebookCacheKey(String source)
+        public FacebookCacheKey(string source)
             : base("FacebookCache")
         {
             Source = source;

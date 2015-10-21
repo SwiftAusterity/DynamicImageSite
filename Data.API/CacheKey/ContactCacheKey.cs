@@ -4,9 +4,9 @@ namespace Site.Data.API.CacheKey
 {
     public class ContactByEmailKey : BaseCacheKey
     {
-        public String Email { get; set; }
+        public string Email { get; set; }
 
-        public ContactByEmailKey(String email)
+        public ContactByEmailKey(string email)
             : base("ContactByEmail")
         {
             Email = email;
@@ -16,7 +16,7 @@ namespace Site.Data.API.CacheKey
         {
             get
             {
-                return String.Format("{0}.{1}", base.Key, Email);
+                return string.Format("{0}.{1}", base.Key, Email);
             }
         }
 
@@ -25,7 +25,7 @@ namespace Site.Data.API.CacheKey
             get
             {
                 // lookup in the config the policy for the official key-an-parameters given
-                return String.Format("{0}{1}/", base.PolicyKey, "Email");
+                return string.Format("{0}{1}/", base.PolicyKey, "Email");
             }
         }
     }

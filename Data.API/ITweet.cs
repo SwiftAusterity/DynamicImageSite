@@ -7,10 +7,10 @@ namespace Site.Data.API
         string Url { get; set; }
         string ExpandedUrl { get; set; }
         string DisplayUrl { get; set; }
-        String UserName { get; set; }
+        string UserName { get; set; }
         long UserID { get; set; }
-        String ProfileImageUrl { get; set; }
-        String Body { get; set; }
+        string ProfileImageUrl { get; set; }
+        string Body { get; set; }
         DateTime CreatedAt { get; set; }
 
         ISocialMediaItem AsSocialMediaItem();

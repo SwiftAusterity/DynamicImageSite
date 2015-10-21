@@ -11,8 +11,8 @@ namespace Site.Data.API
         string Name { get; set; }
         bool NowPlaying { get; set; }
         string ArtistName { get; set; }
-        String AlbumName { get; set; }
-        String Url { get; set; }
+        string AlbumName { get; set; }
+        string Url { get; set; }
         DateTime Date { get; set; }
         int Streamable { get; set; }
 

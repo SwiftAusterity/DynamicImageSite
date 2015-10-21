@@ -16,7 +16,7 @@ namespace Site.Data.API.CacheKey
         {
             get
             {
-                return String.Format("{0}.{1}", base.Key, ID);
+                return string.Format("{0}.{1}", base.Key, ID);
             }
         }
 
@@ -25,7 +25,7 @@ namespace Site.Data.API.CacheKey
             get
             {
                 // lookup in the config the policy for the official key-an-parameters given
-                return String.Format("{0}{1}/", base.PolicyKey, "ID");
+                return string.Format("{0}{1}/", base.PolicyKey, "ID");
             }
         }
     }
