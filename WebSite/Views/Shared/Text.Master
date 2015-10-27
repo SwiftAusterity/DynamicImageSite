@@ -1,9 +1,9 @@
 <%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 
-<%@ Import Namespace="SquishIt.Framework" %>
 <%@ Import Namespace="Site.Models" %>
 <%@ Import Namespace="Site.ViewModels" %>
 <%@ Import Namespace="Site.Data.API" %>
+<%@ Import Namespace="System.Web.Optimization" %>
 <%
     var currentModel = Model as BaseViewModel;
 %>
@@ -41,16 +41,9 @@ xmlns:fb="http://www.Facebook.com/2008/fbml">
     <meta property="og:site_name" content="Infuz">
     <meta property="fb:app_id" content="224336427647940">
     <link rel="shortcut icon" href="/favicon.ico">
-    <%= Bundle.Css()
-                .Add("/Content/css/textadv.css")
-                .WithAttribute("media", "all")
-                .Render("/Content/cache/css/TextAdvAllMaster_#.css")%>
-    <%= Bundle.JavaScript()
-                .Add("/Content/scripts/libs/modernizr-2.0.6.min.js")
-                .Add("/Content/scripts/libs/jquery-1.7.1.min.js")
-                .Add("/Content/scripts/plugins/jquery.tooltip.js")
-                .Add("/Content/scripts/TextADV.js")
-                .Render("/Content/cache/scripts/TextAdvHead_#.js")%>
+
+    <%= Styles.Render("~/Content/cache/css/TextAdvAllMaster") %>
+    <%= Scripts.Render("~/Content/cache/scripts/TextAdvMasterHead") %>
 
     <%
         if (currentModel != null)

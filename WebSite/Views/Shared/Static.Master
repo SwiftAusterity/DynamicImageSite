@@ -1,8 +1,8 @@
 ﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 
-<%@ Import Namespace="SquishIt.Framework" %>
 <%@ Import Namespace="Site.Models" %>
 <%@ Import Namespace="Site.ViewModels" %>
+<%@ Import Namespace="System.Web.Optimization" %>
 <%
     var currentModel = Model as BaseViewModel;
 %>
@@ -35,15 +35,9 @@
     <meta property="fb:app_id" content="224336427647940">
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="//fast.fonts.com/cssapi/fc5373d8-c08f-4e90-9529-898863df2e34.css" rel="stylesheet">
-    <%= Bundle.Css()
-                .Add("/Content/css/main.css")
-                .WithAttribute("media", "screen")
-                .Render("/Content/cache/css/StaticScreenMaster_#.css")%>
-    <%= Bundle.JavaScript()
-                .Add("/Content/scripts/libs/modernizr-2.0.6.min.js")
-                .Add("/Content/scripts/libs/mdetect.min.js")
-                .Add("/Content/scripts/libs/jquery-1.7.1.min.js")
-                .Render("/Content/cache/scripts/StaticMasterHead_#.js")%>
+    
+    <%= Styles.Render("~/Content/cache/css/StaticScreenMaster") %>
+    <%= Scripts.Render("~/Content/cache/scripts/StaticMasterHead") %>
 
     <%
         if (currentModel != null)
@@ -91,10 +85,8 @@
         </footer>
     </div>
     
-    <%= Bundle.JavaScript()
-            .Add("/Content/scripts/plugins/jquery.easing.1.3.js")
-            .Add("/Content/scripts/plugins/jquery.cycle.all.min.js")
-            .Render("/Content/cache/scripts/StaticMasterFoot_#.js")%>
+        <%= Scripts.Render("~/Content/cache/scripts/StaticMasterFoot") %>
+
 <script type="text/javascript" language="javascript">llactid=24506</script> 
 <script type="text/javascript" language="javascript" src="http://t1.trackalyzer.com/trackalyze.js"></script> 
 <script type="text/javascript">llfrmid = 24506</script> 

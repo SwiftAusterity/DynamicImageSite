@@ -34,29 +34,29 @@ namespace Site.ViewModels
             SocialMediaRotatorItems = new List<ISocialMediaItem>();
 
             // most recent albums
-            var latestAlbums = LastFMRepository.GetLatestAlbums("Infuz");
-            if (latestAlbums != null)
-                SocialMediaRotatorItems.AddRange(latestAlbums.Where(item => item != null).Take(3).Select(album => album.ToSocialMediaItem()));
+            //var latestAlbums = LastFMRepository.GetLatestAlbums("Infuz");
+            //if (latestAlbums != null)
+            //    SocialMediaRotatorItems.AddRange(latestAlbums.Where(item => item != null).Take(3).Select(album => album.ToSocialMediaItem()));
 
-            // most recent tracks
-            var latestTracks = LastFMRepository.GetLatestTracks("infuzaudio");
-            if (latestTracks != null)
-                SocialMediaRotatorItems.AddRange(latestTracks.Where(item => item != null).Take(3).Select(track => track.ToSocialMediaItem()));
+            //// most recent tracks
+            //var latestTracks = LastFMRepository.GetLatestTracks("infuzaudio");
+            //if (latestTracks != null)
+            //    SocialMediaRotatorItems.AddRange(latestTracks.Where(item => item != null).Take(3).Select(track => track.ToSocialMediaItem()));
 
-            //Infuz RSS, only stuff newer than 2 weeks ago
-            var newses = NewsRepository.GetLatestFeed("http://www.infuz.com/feed");
-            if (newses != null)
-                SocialMediaRotatorItems.AddRange(newses.Where(item => item != null).Where(item => item.Published.AddDays(14) > DateTime.Now).Select(news => news.ToSocialMediaItem()));
+            ////Infuz RSS, only stuff newer than 2 weeks ago
+            //var newses = NewsRepository.GetLatestFeed("http://www.infuz.com/feed");
+            //if (newses != null)
+            //    SocialMediaRotatorItems.AddRange(newses.Where(item => item != null).Where(item => item.Published.AddDays(14) > DateTime.Now).Select(news => news.ToSocialMediaItem()));
 
-            //Infuz account twitters
-            var twitters = TwitterRepository.GetLatestTweet("Infuz");
-            if (twitters != null)
-                SocialMediaRotatorItems.AddRange(twitters.Where(item => item != null).Where(twitter => twitter.CreatedAt.AddDays(14) > DateTime.Now).Select(twt => twt.ToSocialMediaItem()));
+            ////Infuz account twitters
+            //var twitters = TwitterRepository.GetLatestTweet("Infuz");
+            //if (twitters != null)
+            //    SocialMediaRotatorItems.AddRange(twitters.Where(item => item != null).Where(twitter => twitter.CreatedAt.AddDays(14) > DateTime.Now).Select(twt => twt.ToSocialMediaItem()));
 
-            //Infuz account twitters
-            var posts = FacebookRepository.GetLatestFeed("infuzyourbrand", "224336427647940|7MKzzSKXRWiWdzlPNYWZ5iaW_3o");
-            if (posts != null)
-                SocialMediaRotatorItems.AddRange(posts.Where(item => item != null).Where(item => item.Published.AddDays(7) > DateTime.Now).Select(fb => fb.ToSocialMediaItem()));
+            ////Infuz account twitters
+            //var posts = FacebookRepository.GetLatestFeed("infuzyourbrand", "224336427647940|7MKzzSKXRWiWdzlPNYWZ5iaW_3o");
+            //if (posts != null)
+            //    SocialMediaRotatorItems.AddRange(posts.Where(item => item != null).Where(item => item.Published.AddDays(7) > DateTime.Now).Select(fb => fb.ToSocialMediaItem()));
 
             if (_errors == null)
                 _errors = new List<string>();

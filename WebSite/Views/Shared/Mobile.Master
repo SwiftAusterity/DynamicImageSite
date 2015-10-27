@@ -1,9 +1,9 @@
 <%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 
-<%@ Import Namespace="SquishIt.Framework" %>
 <%@ Import Namespace="Site.Models" %>
 <%@ Import Namespace="Site.ViewModels" %>
 <%@ Import Namespace="Site.Data.API" %>
+<%@ Import Namespace="System.Web.Optimization" %>
 <%
     var currentModel = Model as MobileViewModel;
 %>
@@ -41,16 +41,8 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-iphone4.png">
     <link href="//fast.fonts.com/cssapi/fc5373d8-c08f-4e90-9529-898863df2e34.css" rel="stylesheet">
 
-    <%= Bundle.Css()
-                .Add("/Content/css/main.css")
-                .Add("/Content/css/mobile.css")
-                .WithAttribute("media", "all")
-                .Render("/Content/cache/css/MobileAllMaster_#.css")%>    
-    <%= Bundle.JavaScript()
-                .Add("/Content/scripts/libs/modernizr-2.0.6.min.js")
-                .Add("/Content/scripts/libs/jquery-1.7.1.min.js")
-                .Add("/Content/scripts/app.js")
-                .Render("/Content/cache/scripts/MobileMasterHead_#.js")%>    
+    <%= Styles.Render("~/Content/cache/css/MobileAllMaster") %>
+    <%= Scripts.Render("~/Content/cache/scripts/MobileMasterHead") %>
 
     <%
         if (currentModel != null)

@@ -58,34 +58,34 @@ namespace Site.Data.DTO
         {
             var mediaItems = new List<ISocialMediaItem>();
 
-            if (!string.IsNullOrEmpty(ProfileTarget))
-                switch (TypeClass)
-                {
-                    case SocialMediaTypeClass.lastfmalbum:
-                        var albums = LastFMRepository.GetLatestAlbums(ProfileTarget);
-                        mediaItems.AddRange(albums.Where(item => item != null).Take(3).Select(album => album.ToSocialMediaItem()));
-                        break;
-                    case SocialMediaTypeClass.lastfmtrack:
-                        var tracks = LastFMRepository.GetLatestTracks(ProfileTarget);
-                        if (tracks != null)
-                            mediaItems.AddRange(tracks.Where(item => item != null).Take(5).Select(track => track.ToSocialMediaItem()));
-                        break;
-                    case SocialMediaTypeClass.twitter:
-                        var tweets = TwitterRepository.GetLatestTweet(ProfileTarget);
-                        if (tweets != null)
-                            mediaItems.AddRange(tweets.Where(item => item.CreatedAt.AddDays(7) > DateTime.Now).Where(item => item != null).Select(data => data.ToSocialMediaItem()));
-                        break;
-                    case SocialMediaTypeClass.news:
-                        var news = NewsRepository.GetLatestFeed(ProfileTarget);
-                        if (news != null)
-                            mediaItems.AddRange(news.Where(item => item.Published.AddDays(7) > DateTime.Now).Where(item => item != null).Select(data => data.ToSocialMediaItem()));
-                        break;
-                    case SocialMediaTypeClass.facebook:
-                        var posts = FacebookRepository.GetLatestFeed(ProfileTarget, AuthKey);
-                        if (posts != null)
-                            mediaItems.AddRange(posts.Where(item => item.Published.AddDays(7) > DateTime.Now).Where(item => item != null).Select(data => data.ToSocialMediaItem()));
-                        break;
-                }
+            //if (!string.IsNullOrEmpty(ProfileTarget))
+            //    switch (TypeClass)
+            //    {
+            //        case SocialMediaTypeClass.lastfmalbum:
+            //            var albums = LastFMRepository.GetLatestAlbums(ProfileTarget);
+            //            mediaItems.AddRange(albums.Where(item => item != null).Take(3).Select(album => album.ToSocialMediaItem()));
+            //            break;
+            //        case SocialMediaTypeClass.lastfmtrack:
+            //            var tracks = LastFMRepository.GetLatestTracks(ProfileTarget);
+            //            if (tracks != null)
+            //                mediaItems.AddRange(tracks.Where(item => item != null).Take(5).Select(track => track.ToSocialMediaItem()));
+            //            break;
+            //        case SocialMediaTypeClass.twitter:
+            //            var tweets = TwitterRepository.GetLatestTweet(ProfileTarget);
+            //            if (tweets != null)
+            //                mediaItems.AddRange(tweets.Where(item => item.CreatedAt.AddDays(7) > DateTime.Now).Where(item => item != null).Select(data => data.ToSocialMediaItem()));
+            //            break;
+            //        case SocialMediaTypeClass.news:
+            //            var news = NewsRepository.GetLatestFeed(ProfileTarget);
+            //            if (news != null)
+            //                mediaItems.AddRange(news.Where(item => item.Published.AddDays(7) > DateTime.Now).Where(item => item != null).Select(data => data.ToSocialMediaItem()));
+            //            break;
+            //        case SocialMediaTypeClass.facebook:
+            //            var posts = FacebookRepository.GetLatestFeed(ProfileTarget, AuthKey);
+            //            if (posts != null)
+            //                mediaItems.AddRange(posts.Where(item => item.Published.AddDays(7) > DateTime.Now).Where(item => item != null).Select(data => data.ToSocialMediaItem()));
+            //            break;
+            //    }
 
             return mediaItems;
         }
